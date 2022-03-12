@@ -1,0 +1,455 @@
+.mainBody {
+  overflow: hidden;
+}
+
+.course {
+  margin-top: 50px;
+}
+.courseTitle {
+  position: relative;
+  width: 634px;
+  height: 37px;
+  left: 346px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+.courseItem {
+  font-family: "Montserrat";
+  font-style: normal;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  width: 150px;
+}
+
+/* ------------------------------------ */
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.sliderItem1 {
+  width: 12px;
+  height: 20px;
+  margin: 50px 50px 5px 50px;
+}
+.sliderItem {
+  width: 12px;
+  height: 12px;
+  margin: 50px 10px 5px 10px;
+}
+
+/* --------------------------------------------- */
+
+.level {
+  margin-bottom: 25px;
+  width: 259px;
+  height: 37px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.levelStack {
+  margin-bottom: 25px;
+}
+.SingleLevel1 {
+  width: 100px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #0e6486;
+  border-bottom: 2px solid orange;
+  border-radius: 2px;
+}
+.SingleLevel {
+  width: 137px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(71, 6, 6, 0.25);
+}
+
+.levelCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.levelSingleCard {
+  width: 250px;
+}
+.LeftArrow {
+  position: relative;
+  top: -230px;
+  left: -20px;
+  background-color: #ffffff;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.LefttArrowImg {
+  position: relative;
+  top: 15px;
+  left: -3px;
+  width: 12px;
+  height: 20px;
+}
+.RightArrow {
+  position: relative;
+  left: 1270px;
+  top: -280px;
+  background-color: #ffffff;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.RightArrowImg {
+  position: relative;
+  top: 15px;
+  width: 12px;
+  height: 20px;
+}
+
+/* ----------------------------------------------- */
+.level1 {
+  width: 301px;
+  height: 37px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+}
+
+.levelCardImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.levelSingleCard1 {
+  width: 420px;
+  height: 440px;
+  border-radius: 3%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.levelSingleCard1Title {
+  width: 152px;
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.levelSingleCard1Desc {
+  height: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.4);
+}
+/* ------------------------------------------------------ */
+.Track {
+  height: 600px;
+  background: #f4f3f4;
+  align-items: center;
+  display: flex;
+}
+
+.TrackGroup {
+  /* padding: 50px 0px 20px 0px; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.TrackTitle {
+  position: relative;
+  top: -50px;
+  width: 366px;
+  height: 37px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.TrackSee {
+  position: relative;
+  top: -50px;
+  width: 58px;
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #126688;
+}
+
+.TrackDesc {
+  position: relative;
+  top: -30px;
+  width: 699px;
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  padding-bottom: 50px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.Trakcard {
+  display: flex;
+  justify-content: space-between;
+}
+.LanguageCard {
+  width: 420px;
+  height: 251px;
+  border-top: 15px solid #126688;
+  filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;  
+}
+.MockTest {
+  position: relative;
+  top: 40px;
+  left: 40px;
+  width: 202px;
+  height: 48px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  z-index: -50  ;
+}
+.date {
+  position: relative;
+  top: 50px;
+  left: 40px;
+  width: 181px;
+  height: 22px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.7);
+}
+.free {
+  font-family: "Montserrat";
+  letter-spacing: 0.02em;
+  position: relative;
+  top: 70px;
+  left: 40px;
+  width: 101px;
+  height: 39px;
+  color: #000000;
+  border-radius: 5px;
+  border-style: none;
+  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+}
+
+.enroll {
+  font-family: "Montserrat";
+  letter-spacing: 0.02em;
+  position: relative;
+  top: 70px;
+  width: 150px;
+  height: 39px;
+  color: #126688;
+  background: #ff8a00;
+  background-color: #ffffff;
+  border: 1px solid #126688;
+  border-radius: 5px;
+}
+
+/* ------------------------------------------------------ */
+
+.SubscribedClass {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+
+.MostClass {
+  width: 375px;
+  height: 37px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+/* ---------------------------------------------------------------------- */
+.Learnany {
+  background: #e7f1fe;
+  height: 480px;
+}
+.LearnanyCol {
+  position: relative;
+  top: 150px;
+}
+
+.LearnanyTitle {
+  width: 406px;
+  height: 37px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.LearnanyDesc {
+  width: 530px;
+  height: 70px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.LearnanyButton {
+  width: 195px;
+  height: 54px;
+  color: #0e6486;
+  background: #ffffff;
+  box-shadow: 0px 12px 35px rgba(41, 32, 5, 0.2);
+  border-style: none;
+  border-radius: 5px;
+  margin: 50px 0 0 0;
+}
+
+.Rec1 {
+  position: relative;
+  top: -40px;
+  width: 318px;
+  height: 303px;
+}
+.Rec2 {
+  position: relative;
+  right: -58px;
+  top: -20px;
+}
+.Rec3 {
+  position: relative;
+  top: -400px;
+  left: 330px;
+}
+
+/* --------------------------------------------------------- */
+
+.interested {
+  height: 600px;
+}
+
+.vector1 {
+  position: relative;
+  left: 300px;
+  top: 60px;
+}
+
+.vector2 {
+  position: relative;
+  left: -50px;
+  top: -70px;
+}
+.vector3 {
+  position: relative;
+  top: -450px;
+  left: 120px;
+}
+.interestedCol {
+  position: relative;
+  top: 200px;
+  left: 100px;
+}
+.interestedColTitle {
+  width: 400px;
+  height: 76px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.interestedColDesc {
+  position: relative;
+  left: 85px;
+  width: 309px;
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #110000;
+}
+.interestedColBut {
+  position: relative;
+  top: 50px;
+  left: 200px;
+  padding: 20px 50px;
+  color: #0e6486;
+  box-shadow: 0px 12px 35px rgba(41, 32, 5, 0.2);
+  border-radius: 5px;
+  border-style: none;
+  background: #ffffff;
+}

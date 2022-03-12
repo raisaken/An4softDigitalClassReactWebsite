@@ -1,0 +1,78 @@
+.CardGroup{
+    border-style: none;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}   
+.SingleCard {
+  width: 310px;
+    }
+.CardImgTransparent {
+  position: absolute;
+  top: 30px;
+
+}
+/* .CardImgMain::before{
+content:'';
+position:absolute;
+bottom:0;
+width: 100%;
+height: 100px;
+background: linear-gradient(to top, #0e6486, white);
+z-index: 10;
+} */
+.CardDesc {
+  position: relative;
+  background: #0e6486;
+  height: 100px;
+  padding-top: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+.CardDescTitle {
+  position: relative;
+  left: 20px;
+  width: 173px;
+  height: 22px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.CardDescAuthor {
+  position: relative;
+  width: 112px;
+  height: 18px;
+  left: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.CardDescRank {
+  position: relative;
+  left: 20px;
+  height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.cardDescStar {
+  width: 10px;
+  height: 10px;
+}
+
+.cardDescView {
+  padding-right: 10px;
+}

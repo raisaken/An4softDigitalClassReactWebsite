@@ -1,0 +1,104 @@
+.header {
+  height: 653px;
+  background: #005b7f;
+}
+
+#basic-nav-dropdown {
+  color: #ffffff;
+  font-style: normal;
+  position: relative;
+  top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+.searchBar {
+  position: relative;
+  top: 5px;
+  height: 44px;
+  width: 445px;
+  background: #fff1f3;
+  border-radius: 8px;
+}
+.input {
+  position: relative;
+  background: none;
+  border: none;
+  left: 50px;
+  height: 44px;
+  outline: none;
+}
+.searchIcon {
+  position: relative;
+  color: #888c94;
+  float: right;
+  top: 15px;
+  right: 50px;
+}
+.Register {
+  position: relative;
+  left: 50px;
+  top: 5px;
+  width: 129px;
+  height: 39px;
+  background: #005b7f;
+  border: 1px solid #ffffff;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.Login {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  top: 5px;
+  width: 129px;
+  height: 39px;
+  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 5px;
+}
+
+.headerHeading {
+  position: absolute;
+  width: 593px;
+  height: 91px;
+  top: 294px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 50px;
+  /* or 111% */
+
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+.headerDesc {
+  position: absolute;
+  width: 522px;
+  height: 48px;
+  top: 415px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+.FemaleImg {
+  position: absolute;
+  width: 500px;
+  height: 533px;
+  left: 768px;
+  top: 120px;
+}
