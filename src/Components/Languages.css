@@ -1,0 +1,12 @@
+.Languages .slick-slide > div {
+  margin: 0 10px;
+}
+.Languages .slick-list {
+  margin: 0 -10px;
+}
+
+.LanguagesSlider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

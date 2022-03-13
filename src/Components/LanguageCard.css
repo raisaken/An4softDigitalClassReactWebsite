@@ -1,0 +1,42 @@
+.LanguageCard {
+  width: 100%;
+}
+.LanguageCard .card-img {
+  width: 100%;
+}
+.LanguageCardDesc {
+  position: relative;
+  top: -20px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+  background: #f8f8f8;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.LanguageCardImg {
+  width: 52px;
+  height: 55px;
+}
+.LanguageCardDescDetails {
+  width: 200px;
+  margin-left: 15px;
+}
+.LanguageCardDescTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  padding-bottom: 5px;
+}
+.LanguageCardDescDesc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.02em;
+  line-height: 12px;
+}

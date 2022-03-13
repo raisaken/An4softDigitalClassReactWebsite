@@ -1,0 +1,46 @@
+.Mycard {
+  border: none !important;
+}
+.CardImgTransparent {
+  position: absolute;
+  top: 30px;
+}
+.CardDesc {
+  background: #0e6486;
+  padding-left: 20px;
+  height: 100px;
+  position: relative;
+  top: -20px;
+  /* box-shadow: 0px -50px 20px 20px #005B7F; */
+  border-radius: 5px;
+}
+.CardDescTitle {
+  color: #fff;
+}
+.CardDescAuthor {
+  color: #fff;
+}
+.CardDescRankStar {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100px;
+}
+.FaStar {
+    
+  color: #ffc000;
+  width: 10px;
+}
+.CardDescRank {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardDescView {
+  width: 15px;
+  height: 10px;
+}
+.CardDescRankView {
+  display: flex;
+}
