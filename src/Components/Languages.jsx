@@ -17,9 +17,9 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        height: "30px",
+        height: "35px",
+        width: "35px",
         backgroundColor: "#fff",
-        width: "30px",
         borderRadius: "50%",
         textAlign: "center",
         paddingTop: "6px",
@@ -29,10 +29,14 @@ function SampleNextArrow(props) {
     >
       <BiChevronRight
         style={{
-          fontSize: "25px",
+          position: "relative",
+          top: "-22px",
+          fontSize: "30px",
           fontWeight: "300",
           color: "rgb(115 107 107)",
+          transition: "transform .2s",
         }}
+        className="BiChevron"
       />
     </div>
   );
@@ -46,58 +50,32 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        height: "30px",
+        height: "35px",
         backgroundColor: "#fff",
-        width: "25px",
-        borderRadius: "0 50% 50% 0",
+        width: "35px",
+        borderRadius: "50%",
         textAlign: "center",
         paddingTop: "2px",
         boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
+        zIndex: "1",
       }}
       onClick={onClick}
     >
-      {/* <BiChevronLeft
+      <BiChevronLeft
         style={{
-          fontSize: "25px",
+          position: "relative",
+          top: "-18px",
+          zIndex: "2",
+          fontSize: "30px",
           fontWeight: "300",
           color: "rgb(115 107 107)",
+          transition: "transform .2s",
         }}
-      /> */}
+        className="BiChevron"
+      />
     </div>
   );
 }
-
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{
-//         ...style,
-//         display: "block",
-//         height: "30px",
-//         backgroundColor: "#fff",
-//         width: "25px",
-//         borderRadius: "50% 0 0 50%",
-//         textAlign: "center",
-//         paddingTop: "2px",
-//         boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
-//       }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block", background: "black" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
 
 function Languages() {
   const [key, setKey] = useState("home");
@@ -140,7 +118,7 @@ function Languages() {
   return (
     <div className="Languages">
       <Container>
-        <h1>Choose by level</h1>
+        <h1 className="LanguagesTitle">Popular languages</h1>
         <Tabs
           id="controlled-tab-example"
           activeKey={key}
@@ -168,30 +146,89 @@ function Languages() {
               {/* </div> */}
             </Slider>
           </Tab>
-          <Tab eventKey="profile" title="Japanese">
+          <Tab eventKey="Japanese" title="Japanese">
             <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
               <div>
                 <LanguageCard />
               </div>
               <div>
-                <h3>2</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>3</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>4</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>5</h3>
+                <LanguageCard />
               </div>
-              <div>
-                <h3>6</h3>
-              </div>
+              {/* </div> */}
             </Slider>
           </Tab>
-          <Tab eventKey="contact" title="Chinese  ">
-            Details
+          <Tab eventKey="Chinese" title="Chinese">
+            <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              {/* </div> */}
+            </Slider>
+          </Tab>
+          <Tab eventKey="Nepali" title="Nepali">
+            <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              {/* </div> */}
+            </Slider>
+          </Tab>
+          <Tab eventKey="French" title="French">
+            <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              {/* </div> */}
+            </Slider>
           </Tab>
         </Tabs>
       </Container>
