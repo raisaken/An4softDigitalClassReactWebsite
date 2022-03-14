@@ -1,3 +1,48 @@
-.PreparationCard{
-    
+.PreparationSingleCard {
+  border: none;
+  border-top: 8px solid #0e6486 !important;
+  border-radius: 5px !important;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PreparationCardDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.PreparationCardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  max-width: 280px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+.PreparationCardDate {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;       
+}
+.PreparationCardButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.PreparationCardButtonsFree {
+  font-family: "Montserrat";
+  border-radius: 4px;
+  border: none;
+  padding: 0 20px;
+  letter-spacing: 0.02em;
+  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+}
+.PreparationCardButtonsEnroll {
+  font-family: "Montserrat";
+  border: 1px solid #0e6486;
+  color: #0e6486;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
 }

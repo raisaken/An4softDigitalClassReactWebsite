@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Col,
-  Container,
-  Navbar,
-  NavDropdown,
-  Row,
-} from "react-bootstrap";
+import { Col, Container, Navbar, NavDropdown, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -28,7 +22,13 @@ function Header() {
                 <img src={logo} alt="" />
               </Navbar.Brand>
             </div>
-            <NavDropdown title="Courses" id="basic-nav-dropdown"></NavDropdown>
+            <NavDropdown title="Courses" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action{" "}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            </NavDropdown>
             <div className="searchBar">
               <input
                 type="text"
