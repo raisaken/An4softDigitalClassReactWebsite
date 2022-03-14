@@ -1,5 +1,5 @@
-.Languages {
-    height: 700px;
+.Levels {
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,19 +9,19 @@
     font-size: 30px;
     margin-bottom: 20px;
   }
-  .Languages .nav-tabs {
+  .Levels .nav-tabs {
     margin-bottom: 25px !important;
   }
-  .Languages .slick-slide > div {
+  .Levels .slick-slide > div {
     margin: 0 10px;
   }
-  .Languages .slick-list {
+  .Levels .slick-list {
     margin: 0 -10px;
   }  
-  .Languages .nav-tabs {
+  .Levels .nav-tabs {
     border: none;  
   }   
-  .Languages .nav-link {
+  .Levels .nav-link {
     font-family: 'Montserrat', sans-serif;
     color: rgba(71, 6, 6, 0.25);
     display: flex;
@@ -37,7 +37,7 @@
     border: none;
   }
   
-  .Languages .container .nav-tabs .nav-item.show .nav-link,
+  .Levels .container .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link.active {
     color: #0E6486 !important;
     border: none;
@@ -45,11 +45,7 @@
     border-bottom: 5px solid orange !important;
     border-radius: 2px;
   }
-  .LanguagesSlider {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  
   
   .Languages .BiChevron:hover {
     transform: scale(1.25);

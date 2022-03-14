@@ -9,6 +9,7 @@ import "./Languages.css";
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 import LevelsCard from "./LevelsCard";
+import './Levels.css'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -81,10 +82,10 @@ function SamplePrevArrow(props) {
 function Languages() {
   const [key, setKey] = useState("home");
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     nextArrow: <SampleNextArrow />,
@@ -117,116 +118,125 @@ function Languages() {
     ],
   };
   return (
-    <div className="Languages">
+    <div className="Levels">
       <Container>
-        <h1 className="LanguagesTitle">Popular languages</h1>
+        <h1 className="LanguagesTitle">Choose by Level</h1>
         <Tabs
           id="controlled-tab-example"
           activeKey={key}
           onSelect={(k) => setKey(k)}
           className="mb-3"
         >
-          <Tab eventKey="home" title="Korean">
+          <Tab eventKey="home" title="Primery">
             <Slider {...settings}>
               <div>
                 <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
+              </div>
+              <div>
+                <LevelsCard />
+              </div>
+              <div>
+                <LevelsCard />
+              </div>
+              <div>
+                <LevelsCard />
               </div>
             </Slider>
           </Tab>
-          <Tab eventKey="Japanese" title="Japanese">
+          <Tab eventKey="Secondery" title="Secondery">
             <Slider {...settings}>
-              {/* <div className="LanguagesSlider"> */}
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
-              {/* </div> */}
+              <div>
+                <LevelsCard />
+              </div>
+              <div>
+                <LevelsCard />
+              </div>
+              <div>
+                <LevelsCard />
+              </div>
             </Slider>
           </Tab>
-          <Tab eventKey="Chinese" title="Chinese">
+          <Tab eventKey="Bachelor" title="Bachelor">
             <Slider {...settings}>
-              {/* <div className="LanguagesSlider"> */}
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
-              {/* </div> */}
+              <div>
+                <LevelsCard />
+              </div>
+              <div>
+                <LevelsCard />
+              </div>
+              <div>
+                <LevelsCard />
+              </div>
             </Slider>
           </Tab>
-          <Tab eventKey="Nepali" title="Nepali">
+          <Tab eventKey="Master" title="Master">
             <Slider {...settings}>
-              {/* <div className="LanguagesSlider"> */}
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
-              </div>
-              {/* </div> */}
-            </Slider>
-          </Tab>
-          <Tab eventKey="French" title="French">
-            <Slider {...settings}>
-              {/* <div className="LanguagesSlider"> */}
-              <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
               <div>
-                <LanguageCard />
+                <LevelsCard />
               </div>
-              <div>
-                <LanguageCard />
-              </div>
-              {/* </div> */}
             </Slider>
           </Tab>
         </Tabs>

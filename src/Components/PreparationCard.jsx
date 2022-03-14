@@ -5,11 +5,13 @@ import "./PreparationCard.css";
 
 function PreparationCard() {
   return (
-    <>
+    <div className="PreparationCard">
       <Card>
-        <Card.Img src={Rectangle1037} />
+        <p>Korean Language Basic Mockup Test</p>
+        <p>Date: jan 4, 9:30 PM</p>
+        
       </Card>
-    </>
+    </div>
   );
 }
 
