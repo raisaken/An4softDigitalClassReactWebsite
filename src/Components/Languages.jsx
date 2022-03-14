@@ -80,10 +80,10 @@ function SamplePrevArrow(props) {
 function Languages() {
   const [key, setKey] = useState("home");
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     nextArrow: <SampleNextArrow />,
@@ -127,7 +127,6 @@ function Languages() {
         >
           <Tab eventKey="home" title="Korean">
             <Slider {...settings}>
-              {/* <div className="LanguagesSlider"> */}
               <div>
                 <LanguageCard />
               </div>
@@ -143,7 +142,15 @@ function Languages() {
               <div>
                 <LanguageCard />
               </div>
-              {/* </div> */}
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
             </Slider>
           </Tab>
           <Tab eventKey="Japanese" title="Japanese">

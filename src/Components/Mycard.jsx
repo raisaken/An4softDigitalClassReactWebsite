@@ -18,14 +18,16 @@ function Mycard() {
             <div className="CardDescRankStar">
               4.7
               <FaStar className="FaStar" />
-              <FaStar style={{ color: "#ffc000" , width:"10px" }} />
-              <FaStar style={{ color: "#ffc000" , width:"10px"}} />
-              <FaStar style={{ color: "#ffc000" , width:"10px"}} />
-              <FaStar style={{ color: "#ffc000" , width:"10px"}} />
+              <FaStar className="FaStar" />
+              <FaStar className="FaStar" />
+              <FaStar className="FaStar" />
+              <FaStar className="FaStar" />
             </div>
             <div className="CardDescRankView">
-              <img src={Vector4} className="cardDescView" alt="" />
-              1000 View
+              <div className="CardDescRankViewItem">
+                <img src={Vector4} className="cardDescView" alt="" />
+              </div>
+              <div className="CardDescRankViewItem">1000 View</div>
             </div>
           </div>
         </div>

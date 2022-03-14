@@ -1,0 +1,57 @@
+.Courses {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
+}
+.CoursesTitle {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Montserrat";
+  line-height: 37px;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10px 0;
+  letter-spacing: 0.02em;
+}
+.Courses .nav-tabs .nav-link {
+  font-family: "Montserrat";
+  font-weight: 550;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  margin: 10px 0;
+}
+.Courses .nav-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.Courses .slick-slide > div {
+  margin: 0 10px;
+}
+.Courses .slick-list {
+  margin: 0 -10px;
+}
+.slick-next {
+  z-index: 1;
+}
+.slick-prev {
+  z-index: 1;
+}
+.Courses .BiChevron:hover {
+  transform: scale(1.25);
+}
+
+.Courses .nav-link {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 50px 0 0;
+  letter-spacing: 0.02em;
+}
+.Courses .nav-tabs {
+  border: none;
+}

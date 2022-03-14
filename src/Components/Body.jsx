@@ -1,5 +1,5 @@
-import React from "react";
-import { Card, Col, Container, Row, Stack } from "react-bootstrap";
+import React, { useState } from "react";
+import { Card, Col, Container, Row, Stack, Tab, Tabs } from "react-bootstrap";
 import LeftArrow from "../Pictures/LeftArrow.png";
 import RightArrow from "../Pictures/RightArrow.png";
 import Vector3 from "../Pictures/Vector 3.png";
@@ -15,19 +15,20 @@ import Rectangle1004 from "../Pictures/Rectangle 1004.png";
 import Rectangle1017 from "../Pictures/Rectangle 1017.png";
 import Footer from "./Footer";
 import "./Body.css";
-import Advertise from "./Advertise";
 import Courses from "./Courses";
 import Levels from "./Levels";
 import Languages from "./Languages";
 import Mycard from "./Mycard";
 import PreparationCard from "./PreparationCard";
-import TestTab from "./TestTab";
+// import TestTab from "./TestTab";
 <link
   href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap"
   rel="stylesheet"
 ></link>;
 
 function Body() {
+  const [key, setKey] = useState("home");
+
   return (
     <div className="mainBody">
       <Container>
@@ -38,21 +39,19 @@ function Body() {
       <Levels />
 
       {/* ----------TestTab------------------------------------------------------------- */}
-      <TestTab/>
+      {/* <TestTab/> */}
       {/* --------Popular languages----------------------------------------------------------------------- */}
       <Languages />
 
       {/* ------PreparationCard--------------------------------------------------------------------------------------- */}
 
-      
-        <Container>
-          <div className="Track"> 
-          <PreparationCard/>
-          <PreparationCard/>
-          <PreparationCard/>
-          </div>
-          
-        </Container>
+      <Container>
+        <div className="Track">
+          <PreparationCard />
+          <PreparationCard />
+          <PreparationCard />
+        </div>
+      </Container>
       {/* --------------------------------------------------------------------------- */}
       <div className="SubscribedClass">
         <Container>

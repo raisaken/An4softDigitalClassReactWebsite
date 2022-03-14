@@ -1,24 +1,45 @@
 import React, { useState } from "react";
 import { Container, Tab, Tabs } from "react-bootstrap";
 import Slider from "react-slick";
-import Rectangle964 from "../Pictures/Rectangle 964.png";
-import Rectangle968 from "../Pictures/Rectangle 968.png";
-import Vector4 from "../Pictures/Vector (4).png";
-import { Card } from "react-bootstrap";
-import { FaStar } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Courses.css";
-import Mycard from "./Mycard";
+import LanguageCard from "./LanguageCard";
+import "./Languages.css";
+import { BiChevronLeft } from "react-icons/bi";
+import { BiChevronRight } from "react-icons/bi";
+import LevelsCard from "./LevelsCard";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{
+        ...style,
+        display: "block",
+        height: "35px",
+        width: "35px",
+        backgroundColor: "#fff",
+        borderRadius: "50%",
+        textAlign: "center",
+        paddingTop: "6px",
+        boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
+      }}
       onClick={onClick}
-    />
+    >
+      <BiChevronRight
+        style={{
+          position: "relative",
+          top: "-22px",
+          fontSize: "30px",
+          fontWeight: "300",
+          color: "rgb(115 107 107)",
+          transition: "transform .2s",
+        }}
+        className="BiChevron"
+      />
+    </div>
   );
 }
 
@@ -27,21 +48,44 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{
+        ...style,
+        display: "block",
+        height: "35px",
+        backgroundColor: "#fff",
+        width: "35px",
+        borderRadius: "50%",
+        textAlign: "center",
+        paddingTop: "2px",
+        boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
+        zIndex: "1",
+      }}
       onClick={onClick}
-    />
+    >
+      <BiChevronLeft
+        style={{
+          position: "relative",
+          top: "-18px",
+          zIndex: "2",
+          fontSize: "30px",
+          fontWeight: "300",
+          color: "rgb(115 107 107)",
+          transition: "transform .2s",
+        }}
+        className="BiChevron"
+      />
+    </div>
   );
 }
 
-function Levels() {
+function Languages() {
   const [key, setKey] = useState("home");
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    initialSlide: 0,
     infinite: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -73,62 +117,117 @@ function Levels() {
     ],
   };
   return (
-    <div>
+    <div className="Languages">
       <Container>
-        <h1>Choose by level</h1>
+        <h1 className="LanguagesTitle">Popular languages</h1>
         <Tabs
           id="controlled-tab-example"
           activeKey={key}
           onSelect={(k) => setKey(k)}
           className="mb-3"
         >
-          <Tab eventKey="home" title="Home">
+          <Tab eventKey="home" title="Korean">
             <Slider {...settings}>
               <div>
-                <Mycard/>
+                <LevelsCard />
               </div>
               <div>
-                <h3>2</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>3</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>4</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>5</h3>
-              </div>
-              <div>
-                <h3>6</h3>
+                <LanguageCard />
               </div>
             </Slider>
           </Tab>
-          <Tab eventKey="profile" title="Profile">
+          <Tab eventKey="Japanese" title="Japanese">
             <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
               <div>
-                  <Mycard/>
-                
+                <LanguageCard />
               </div>
               <div>
-                <h3>2</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>3</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>4</h3>
+                <LanguageCard />
               </div>
               <div>
-                <h3>5</h3>
+                <LanguageCard />
               </div>
-              <div>
-                <h3>6</h3>
-              </div>
+              {/* </div> */}
             </Slider>
           </Tab>
-          <Tab eventKey="contact" title="Contact">
-            Details
+          <Tab eventKey="Chinese" title="Chinese">
+            <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              {/* </div> */}
+            </Slider>
+          </Tab>
+          <Tab eventKey="Nepali" title="Nepali">
+            <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              {/* </div> */}
+            </Slider>
+          </Tab>
+          <Tab eventKey="French" title="French">
+            <Slider {...settings}>
+              {/* <div className="LanguagesSlider"> */}
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              <div>
+                <LanguageCard />
+              </div>
+              {/* </div> */}
+            </Slider>
           </Tab>
         </Tabs>
       </Container>
@@ -136,4 +235,4 @@ function Levels() {
   );
 }
 
-export default Levels;
+export default Languages;

@@ -1,0 +1,57 @@
+.Languages {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .LanguagesTitle{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .Languages .nav-tabs {
+    margin-bottom: 25px !important;
+  }
+  .Languages .slick-slide > div {
+    margin: 0 10px;
+  }
+  .Languages .slick-list {
+    margin: 0 -10px;
+  }  
+  .Languages .nav-tabs {
+    border: none;  
+  }   
+  .Languages .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(71, 6, 6, 0.25);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 50px 0 0;
+    letter-spacing: 0.02em;
+  }
+  
+  .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none;
+  }
+  
+  .Languages .container .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: #0E6486 !important;
+    border: none;
+    /* background-color: rgb(207, 21, 21) !important; */
+    border-bottom: 5px solid orange !important;
+    border-radius: 2px;
+  }
+  .LanguagesSlider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .Languages .BiChevron:hover {
+    transform: scale(1.25);
+  }
+  

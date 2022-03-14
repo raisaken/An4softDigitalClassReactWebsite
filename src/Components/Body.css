@@ -20,6 +20,7 @@
 .MostClass {
   width: 375px;
   height: 37px;
+  margin: 20px 0px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -30,6 +31,8 @@
 }
 .SubscribedClassCard{
   display: flex;
+  justify-content: space-between;
+
 }
 /* ---------------------------------------------------------------------- */
 .Learnany {

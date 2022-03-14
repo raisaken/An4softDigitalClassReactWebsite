@@ -5,16 +5,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Courses.css";
 import Mycard from "./Mycard";
-import './Mycard.css'
+import "./Mycard.css";
+import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
+    <div className={className} onClick={onClick}>
+      <BiChevronRight
+        style={{
+          position: "relative",
+          top: "138px",
+          right: "545px",
+          fontSize: "40px",
+          fontWeight: "300",
+          color: "rgb(115 107 107)",
+          transition: "transform .2s",
+          zIndex:"2 !important",
+        }}
+        className="BiChevron"
+      />
+    </div>
   );
 }
 
@@ -23,14 +34,39 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{
+        ...style,
+        position: "absolute",
+        top: "320px",
+        left: "500px",
+        display: "block",
+        height: "35px",
+        width: "35px",
+        backgroundColor: "#fff",
+        borderRadius: "50%",
+        textAlign: "center",
+        paddingTop: "6px",
+        // boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
+      }}
       onClick={onClick}
-    />
+    >
+      <BiChevronLeft
+        style={{
+          position: "relative",
+          bottom: "26px",
+          zIndex: "2",
+          fontSize: "40px",
+          fontWeight: "300",
+          color: "rgb(115 107 107)",
+          transition: "transform .2s",
+        }}
+        className="BiChevron"
+      />
+    </div>
   );
 }
-
 function Courses() {
-  const [key, setKey] = useState("home");
+  const [key, setKey] = useState("newclass");
   var settings = {
     dots: true,
     infinite: false,
@@ -69,61 +105,146 @@ function Courses() {
     ],
   };
   return (
-    <div>
+    <div className="Courses">
       <Container>
-        <h1>Choose by level</h1>
+        <h1 className="CoursesTitle">More Than 500 courses in 20 categories</h1>
         <Tabs
           id="controlled-tab-example"
           activeKey={key}
           onSelect={(k) => setKey(k)}
           className="mb-3"
         >
-          <Tab eventKey="home" title="Home">
+          <Tab eventKey="newclass" title="New Class">
             <Slider {...settings}>
               <div>
-                <Mycard/>
+                <Mycard />
               </div>
               <div>
-                <h3>2</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>3</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>4</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>5</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>6</h3>
+                <Mycard />
               </div>
             </Slider>
           </Tab>
-          <Tab eventKey="profile" title="Profile">
+          <Tab eventKey="Math" title="Math">
             <Slider {...settings}>
               <div>
-               <Mycard/>
+                <Mycard />
               </div>
               <div>
-                <h3>2</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>3</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>4</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>5</h3>
+                <Mycard />
               </div>
               <div>
-                <h3>6</h3>
+                <Mycard />
               </div>
             </Slider>
           </Tab>
-          <Tab eventKey="contact" title="Contact">
-            Details
+          <Tab eventKey="Science" title="Science">
+            <Slider {...settings}>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+            </Slider>
+          </Tab>
+          <Tab eventKey="Programming" title="Programming">
+            <Slider {...settings}>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+            </Slider>
+          </Tab>
+          <Tab eventKey="Music" title="Music">
+            <Slider {...settings}>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+            </Slider>
+          </Tab>
+          <Tab eventKey="Account" title="Account">
+            <Slider {...settings}>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+              <div>
+                <Mycard />
+              </div>
+            </Slider>
           </Tab>
         </Tabs>
       </Container>
