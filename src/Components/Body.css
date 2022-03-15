@@ -70,8 +70,11 @@
   border-style: none;
   border-radius: 5px;
   margin: 50px 0 0 0;
+  transition: 0.2s;
 }
-
+.LearnanyButton:hover {
+  border:1px solid rgb(128, 88, 88);
+}
 .Rec1 {
   position: relative;
   top: -40px;
@@ -152,4 +155,7 @@
   border-radius: 5px;
   border-style: none;
   background: #ffffff;
+}
+.interestedColBut:hover {
+  border:1px solid rgb(128, 88, 88);
 }

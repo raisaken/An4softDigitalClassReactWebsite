@@ -1,9 +1,24 @@
-.LevelsCard{
-    max-height: 200px;
+.LevelsCard {
+  max-height: 200px;
+  cursor: pointer;
 }
 
+.LevelsCard1 {
+  overflow: hidden;
+}
+.Rectangle997 {
+  transition: transform 0.2s;
+}
+.LevelsCard1:hover .Rectangle997 {
+  transform: scale(1.15);
+}
+.Rectangle997:hover {
+  transform: scale(1.15);
+}
 .Rectangle1006 {
   position: absolute;
+  top: 20px;
+  border-radius: 6px !important;
 }
 .LevelsCardDesc {
   position: relative;

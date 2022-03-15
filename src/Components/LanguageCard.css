@@ -1,8 +1,17 @@
 .LanguageCard {
   width: 100%;
+  cursor: pointer;
 }
+.LanguageCard1{
+  overflow: hidden;
+} 
 .LanguageCard .card-img {
   width: 100%;
+  transition: transform 0.2s;
+
+}
+.LanguageCard .card-img:hover {
+  transform: scale(1.15);
 }
 .LanguageCardDesc {
   position: relative;

@@ -1,15 +1,38 @@
 .Preparation {
-  height: 500px;
+  height: 550px;
   background-color: #f4f3f4;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.PreparationContainerDesc {
+  display: flex;
+  justify-content: space-between;
+}
+.PreparationContainerTitle {
+  font-size: 30px;
+  font-weight: 700;
+}
+.PreparationContainerSee {
+  font-size: 17px;
+  font-weight: 600;
+  color: #126688;
+  cursor: pointer;
+}
+.PreparationContainerSee:hover {
+  filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.25));
+}
 
+.PreparationContainerMore {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}
 .PreparationCards {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center ;
+  align-items: center;
   justify-content: space-between;
+  margin: 25px 0 0 0;
 }

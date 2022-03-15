@@ -1,0 +1,90 @@
+.Course {
+  font-family: "Montserrat";
+  overflow: hidden;
+}
+.CourseDetails {
+  margin-top: 30px;
+}
+.CourseDetailsDesc {
+  display: flex;
+  justify-content: space-between;
+}
+.breadcrumb-item{
+ font-size: 20px;
+ font-weight: 800;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, ">");
+ 
+}
+.CourseDetailsRight {
+  position: sticky;
+}
+.CourseDetailsRightCC {
+  position: sticky;
+  border: none;
+  box-shadow: 5px 5px 15px rgba(91, 86, 86, 0.25);
+}
+.CourseDetailsRightC {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+.CourseDetailsRightContainer {
+}
+.CourseDetailsRightPrice {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.CourseDetailsRightoff {
+  display: flex;
+  justify-content: space-between;
+}
+.CourseDetailsRightoffprice {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.CourseDetailsRightoffoff {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px 30px 0 30px;
+  color: #fff;
+  align-items: center;
+  background-color: #ffc000;
+}
+.BuyNow {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 10px 0 10px 0;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #ffc000;
+}
+.AddtoCart {
+  margin: 20px 0 0 0;
+  border: 1px solid #0e6486;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0 10px 0;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.CourseInfo {
+  margin: 30px 0 20px 0;
+}
+.CourseInfotitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 0 0;
+}
+.CourseInfoItem {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  font-weight: 500;
+}

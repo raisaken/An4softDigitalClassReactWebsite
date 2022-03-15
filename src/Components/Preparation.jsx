@@ -7,6 +7,11 @@ function Preparation() {
   return (
     <div className="Preparation">
       <Container className="PreparationContainer">
+        <div className="PreparationContainerDesc">
+          <p className="PreparationContainerTitle">Track your preparation</p>
+          <p className="PreparationContainerSee">See all</p>
+        </div>
+        <p className="PreparationContainerMore">Evaluate your progress with  Mock Tests and detailed results analysis</p>
         <div className="PreparationCards">
           <PreparationCard />
           <PreparationCard />

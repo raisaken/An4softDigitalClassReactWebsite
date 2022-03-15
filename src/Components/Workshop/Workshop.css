@@ -1,0 +1,90 @@
+.Workshop {
+  height: 600px;
+  background: #005b7f;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.WorkshopContainer {
+  display: flex;
+  align-items: center;
+}
+.WorkshopTitle {
+  font-size: 30px;
+  font-weight: 800;
+  position: relative;
+  top: -55px;
+  left: 20px;
+  color: #ffc000;
+}
+.ADVERTISING {
+  font-size: 45px;
+  font-weight: 800;
+  color: #fff;
+}
+.Prepare {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+.hr {
+  color: #fff !important;
+  position: relative;
+  height: 2px !important;
+  opacity: 100 !important;
+}
+.RemaningTime {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 330px;
+}
+.RemaningTimeItem {
+  margin: -10px 0 -10px 0;
+}
+
+.Hour {
+  height: 50px;
+  width: 60px;
+  background: #ffc000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number {
+  margin: -1px 0 -10px 0;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 0;
+}
+.numberItem {
+  font-size: 15px;
+  font-weight: 400;
+}
+.BookNow {
+  margin: 20px 0 0 0;
+  padding: 10px 40px;
+  background: #005b7f;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  transition: 0.2s;
+}
+.BookNow:hover {
+  color: #ffc000;
+  border: 1px solid #ffc000;
+  filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.25));
+}
+.EnglishTeacher {
+  position: relative;
+  top: 44px;
+}
+.Rectangle994 {
+  position: absolute;
+  /* top: 1650px; */
+  height: 200px;
+  /* top: 20px; */
+  width: 100%;
+}

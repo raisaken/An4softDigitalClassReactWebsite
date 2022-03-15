@@ -21,6 +21,8 @@ import Languages from "./Languages";
 import Mycard from "./Mycard";
 import PreparationCard from "./PreparationCard";
 import Preparation from "./Preparation";
+import Header from "./Header";
+import Workshop from "./Workshop/Workshop";
 // import TestTab from "./TestTab";
 <link
   href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap"
@@ -32,10 +34,10 @@ function Body() {
 
   return (
     <div className="mainBody">
-      <Container>
+      <Header />
         <Courses />
-      </Container>
-      {/* <Advertise /> */}
+      {/* <Workshop /> */}
+      <Workshop />
       {/* ----------------------------------------------------------------------------- */}
       <Levels />
 
@@ -107,8 +109,6 @@ function Body() {
           </Row>
         </Container>
       </div>
-
-      {/* ------------------------------------------------------------------------------------------ */}
 
       <Footer />
     </div>

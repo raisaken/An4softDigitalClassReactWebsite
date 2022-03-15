@@ -15,9 +15,9 @@ function LevelsCard() {
     <div className="LevelsCard">
       <Card
         className="LevelsCard1"
-        style={{ border: "none", borderRadius: "0.25px" }}
+        style={{ border: "none", borderRadius: "6px" }}
       >
-        <Card.Img src={Rectangle997}></Card.Img>
+        <Card.Img src={Rectangle997} className="Rectangle997"></Card.Img>
         <Card.Img src={Rectangle1006} className="Rectangle1006"></Card.Img>
         <div className="LevelsCardDesc">
           <div className="LanguageCardDescTitle">By Raju Hamal</div>

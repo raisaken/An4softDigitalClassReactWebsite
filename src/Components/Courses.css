@@ -1,8 +1,7 @@
 .Courses {
   display: flex;
-  align-items: center;
+  align-items: center ;
   height: 600px;
-  justify-content: center;
 }
 .CoursesTitle {
   display: flex;

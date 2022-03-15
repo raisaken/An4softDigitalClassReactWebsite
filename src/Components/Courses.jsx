@@ -19,7 +19,7 @@ function SampleNextArrow(props) {
           right: "545px",
           fontSize: "40px",
           fontWeight: "300",
-          color: "rgb(115 107 107)",
+          color: "#005b7f",
           transition: "transform .2s",
           zIndex:"2 !important",
         }}
@@ -41,7 +41,7 @@ function SamplePrevArrow(props) {
         left: "500px",
         display: "block",
         height: "35px",
-        width: "35px",
+        width: "35px",               
         backgroundColor: "#fff",
         borderRadius: "50%",
         textAlign: "center",
@@ -57,7 +57,7 @@ function SamplePrevArrow(props) {
           zIndex: "2",
           fontSize: "40px",
           fontWeight: "300",
-          color: "rgb(115 107 107)",
+          color: "#005b7f", 
           transition: "transform .2s",
         }}
         className="BiChevron"
@@ -66,7 +66,7 @@ function SamplePrevArrow(props) {
   );
 }
 function Courses() {
-  const [key, setKey] = useState("newclass");
+  const [key, setKey] = useState("Programming");
   var settings = {
     dots: true,
     infinite: false,

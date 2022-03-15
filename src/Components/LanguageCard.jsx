@@ -14,7 +14,7 @@ function LanguageCard() {
     <div className="LanguageCard">
       <Card
         className="LanguageCard1"
-        style={{ border: "none", borderRadius: "0.25px" }}
+        style={{ border: "none", borderRadius: "6px" }}
       >
         <Card.Img src={Rectangle1017}></Card.Img>
         <div className="LanguageCardDesc">
