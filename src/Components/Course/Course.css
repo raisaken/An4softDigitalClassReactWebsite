@@ -1,27 +1,61 @@
 .Course {
   font-family: "Montserrat";
-  overflow: hidden;
+  overflow: hidden;  
 }
 .CourseDetails {
   margin-top: 30px;
+}
+.CourseDetailsLeft {
+  max-width: 700px;
 }
 .CourseDetailsDesc {
   display: flex;
   justify-content: space-between;
 }
-.breadcrumb-item{
- font-size: 20px;
- font-weight: 800;
+.breadcrumb-item {
+  font-size: 20px;
+  font-weight: 800;
 }
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   content: var(--bs-breadcrumb-divider, ">");
- 
 }
+.Preview {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 50px 0 20px 0;
+}
+.PreviewItems {
+  /* text-align: justify; */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto;
+  color: rgba(1, 13, 18, 0.7);
+}
+.Description {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 50px 0 20px 0;
+}
+.DescriptionDetails {
+  text-align: justify;
+  font-size: 18px;
+  color: rgba(1, 13, 18, 0.7);
+}
+.Showmore {
+  display: flex;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 20px 0 20px 0;
+  justify-content: center;
+}
+/* ----------------------------------------------- */
 .CourseDetailsRight {
   position: sticky;
+  top: 0;
 }
 .CourseDetailsRightCC {
-  position: sticky;
+  /* position: sticky;
+  top: 0; */
   border: none;
   box-shadow: 5px 5px 15px rgba(91, 86, 86, 0.25);
 }
@@ -31,8 +65,6 @@
   align-items: center;
   justify-content: center;
   max-width: 300px;
-}
-.CourseDetailsRightContainer {
 }
 .CourseDetailsRightPrice {
   font-size: 16px;

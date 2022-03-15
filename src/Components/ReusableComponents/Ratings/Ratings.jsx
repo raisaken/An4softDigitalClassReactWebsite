@@ -4,7 +4,6 @@ import styled from "styled-components";
 function Ratings({ children, className }) {
   const Button = styled.button`
     background-color: green;
-
     width: 150px;
     height: 50px;
     border: none;
