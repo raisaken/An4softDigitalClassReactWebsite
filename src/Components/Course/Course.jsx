@@ -1,9 +1,18 @@
 import React from "react";
 import { Breadcrumb, Card, CardImg, Container } from "react-bootstrap";
 import Footer from "../Footer";
+import Ratings from "../ReusableComponents/Ratings/Ratings"
 import Rectangle1061 from "../../Pictures/Rectangle 1061.png";
 import "./Course.css";
 import DigitalclassNavbar from "../DigitalclassNavbar/DigitalclassNavbar";
+import styled from 'styled-components'
+
+const ModifiedRatings = styled(Ratings)`
+  background-color: red;
+  font-size: 10rem;
+  font-weight:bold;
+  color:black;
+`;
 
 function Course() {
   return (
@@ -17,6 +26,9 @@ function Course() {
                 <Breadcrumb.Item href="#">Programming</Breadcrumb.Item>
                 <Breadcrumb.Item active>Node Js</Breadcrumb.Item>
               </Breadcrumb>
+              <div>
+                <ModifiedRatings>Modified Button</ModifiedRatings>
+              </div>
             </div>
             <div className="CourseDetailsRight">
               <Card className="CourseDetailsRightCC">
