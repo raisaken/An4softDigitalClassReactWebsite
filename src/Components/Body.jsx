@@ -23,11 +23,7 @@ import PreparationCard from "./PreparationCard";
 import Preparation from "./Preparation";
 import Header from "./Header";
 import Workshop from "./Workshop/Workshop";
-// import TestTab from "./TestTab";
-<link
-  href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap"
-  rel="stylesheet"
-></link>;
+import Test from "../Test";
 
 function Body() {
   const [key, setKey] = useState("home");
@@ -35,8 +31,8 @@ function Body() {
   return (
     <div className="mainBody">
       <Header />
-        <Courses />
-      {/* <Workshop /> */}
+      <Courses />
+      {/* --------<Workshop /> ----------------------------------------------------------*/}
       <Workshop />
       {/* ----------------------------------------------------------------------------- */}
       <Levels />
@@ -64,49 +60,48 @@ function Body() {
       {/* -------------------------------------------------------------------------------------- */}
       <div className="Learnany">
         <Container>
-          <Row>
-            <Col className="LearnanyCol">
+          <div className="LearnanyDetails">
+            <div className="LearnanyGroupA">
               <div className="LearnanyTitle"> Learn anytime, anywhere</div>
               <div className="LearnanyDesc">
                 Propel your career, get a degree, or expand your knowledge at
                 any time anywhere
               </div>
               <button className="LearnanyButton">Find out how</button>
-            </Col>
-            <Col>
-              <div className="Rec1">
-                <img src={Rectangle1047} alt="" />
-              </div>
-              <div className="Rec2">
-                <img src={Rectangle1049} alt="" />
-              </div>
-              <div className="Rec3">
-                <img src={Rectangle1048} alt="" />
-              </div>
-            </Col>
-          </Row>
+            </div>
+            <div className="LearnanyGroupB">
+              {/* <div className="Rec1"> */}
+              <img src={Rectangle1047} alt="" className="Rec1ImgA" />
+              {/* </div> */}
+              {/* <div className="Rec2"> */}
+              <img src={Rectangle1049} alt="" className="Rec1ImgB" />
+              {/* </div> */}
+              {/* <div className="Rec3"> */}
+              <img src={Rectangle1048} alt="" className="Rec1ImgC" />
+              {/* </div> */}
+            </div>
+          </div>
         </Container>
       </div>
       <div className="interested">
         <Container>
-          <Row>
-            <Col>
-              <div>
-                <img src={Vector5} className="vector1" alt="" />
-                <img src={Vector5} className="vector2" alt="" />
-                <img src={Vector3} className="vector3" alt="" />
-              </div>
-            </Col>
-            <Col className="interestedCol">
+          <div className="interesteddiv">
+            <div>
+              <img src={Vector5} className="vector1" alt="" />
+              <img src={Vector5} className="vector2" alt="" />
+              <img src={Vector3} className="vector3" alt="" />
+            </div>
+
+            <div className="interestedCol">
               <div className="interestedColTitle">
-                Interested in becoming a teacher with edigital class?
+                Interested in becoming a <br /> teacher with edigital class?
               </div>
               <div className="interestedColDesc">
-                We are recruiting more tutors.{" "}
+                We are recruiting more tutors.
               </div>
               <button className="interestedColBut">Apply for teach</button>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Container>
       </div>
 

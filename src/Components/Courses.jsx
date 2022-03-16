@@ -21,7 +21,7 @@ function SampleNextArrow(props) {
           fontWeight: "300",
           color: "#005b7f",
           transition: "transform .2s",
-          zIndex:"2 !important",
+          zIndex: "2 !important",
         }}
         className="BiChevron"
       />
@@ -32,33 +32,18 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        position: "absolute",
-        top: "320px",
-        left: "500px",
-        display: "block",
-        height: "35px",
-        width: "35px",               
-        backgroundColor: "#fff",
-        borderRadius: "50%",
-        textAlign: "center",
-        paddingTop: "6px",
-        // boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
-      }}
-      onClick={onClick}
-    >
+    <div className={className} onClick={onClick}>
       <BiChevronLeft
         style={{
           position: "relative",
-          bottom: "26px",
+          top:"138px",
+          left:"520px",
           zIndex: "2",
           fontSize: "40px",
           fontWeight: "300",
-          color: "#005b7f", 
+          color: "#005b7f",
           transition: "transform .2s",
+          zIndex: "2 !important",
         }}
         className="BiChevron"
       />
@@ -106,7 +91,7 @@ function Courses() {
   };
   return (
     <div className="Courses">
-      <Container>
+      <Container >
         <h1 className="CoursesTitle">More Than 500 courses in 20 categories</h1>
         <Tabs
           id="controlled-tab-example"

@@ -1,0 +1,72 @@
+.InstructorDetails {
+  display: flex;
+}
+.InstructorDetailsDesc {
+  margin: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.InstructorDetailsTitle {
+  font-size: 25px;
+  font-weight: 600;
+}
+.InstructorDetailsName {
+  font-size: 30px;
+  font-weight: 700;
+}
+.InstructorDetailsDesc1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.InstructorRatings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f6f8;
+  border-left: 2px solid #ffc000;
+  padding: 10px;
+}
+.InstructorRatingsItem1 {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  font-size: 25px;
+  font-weight: 700;
+}
+.InstructorRatingsItem2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.InstructorContact {
+  display: flex;
+  padding: 30px 0;
+}
+.InstructorContactGroupA {
+  display: flex;
+  align-items: center;
+  flex: 0.4;
+  font-size: 25px;
+}
+.InstructorContactGroupB {
+  color: rgba(26, 27, 29, 0.8);
+}
+.InstructorContactGroupBItem {
+  font-size: 20px;
+}
+.InstructorContactGroupBItem {
+}
+.InstructorContactGroupBItemIcon {
+  margin: 0 1em;
+}
+.FeatureClass {
+}
+.FeatureClassTitle {
+  font-size: 30px;
+  font-weight: 700;
+}
+.FeatureClassCards {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(2, 2fr);
+}

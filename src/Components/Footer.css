@@ -1,5 +1,10 @@
-.body{
-    height: 280px;
+.footerbody{
+  padding: 3em 0 0 0;
+    background: #fff;
+    /* z-index: 2000 !important; */
+}
+.footerbodyContainer{
+  z-index: 1 !important;
 }
 .footerLogo {
   height: 106px;

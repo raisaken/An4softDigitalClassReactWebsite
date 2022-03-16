@@ -1,16 +1,37 @@
+@use "react-modal-video/scss/modal-video.scss";
+
 .Course {
   font-family: "Montserrat";
-  overflow: hidden;  
+  overflow: hidden;
+  margin: 5em 0 0 0;
 }
 .CourseDetails {
-  margin-top: 30px;
+  /* margin: 6em 0 0 0; */
 }
 .CourseDetailsLeft {
-  max-width: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin: 0 15em 0 0;
 }
 .CourseDetailsDesc {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  position: relative;
+}
+.CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemA {
+  font-size: 30px;
+  color: #0e6486 !important;
+  text-decoration: none !important;
+}
+.CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemA a {
+  color: #0e6486;
+  text-decoration: none;
+}
+.CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemB {
+  font-size: 30px;
+  color: #0e6486;
 }
 .breadcrumb-item {
   font-size: 20px;
@@ -41,23 +62,76 @@
   font-size: 18px;
   color: rgba(1, 13, 18, 0.7);
 }
-.Showmore {
+.Onclickmore{
   display: flex;
+  width: 100%;
+  justify-content: center;
+  /* align-items: center; */
+}
+.Showmore {
+  /* display: flex; */
   font-size: 20px;
   font-weight: 800;
-  margin: 20px 0 20px 0;
-  justify-content: center;
+  margin: 20px 0;
+  padding: 0.2em 1em;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* background-color: red; */
+  border-radius: 10px;
+  /* width: 50px; */
 }
-/* ----------------------------------------------- */
+.Showmore:hover {
+  cursor: pointer;
+  box-shadow: 5px 4px 20px#000;
+}
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+}
+/* ------InstructorsTitle------------------------------------------------ */
+.InstructorsTitle {
+  color: black;
+  font-size: 20px;
+}
+/* ------CourseDetailsStudents------------------------------- */
+.CourseDetailsStudents {
+  margin: 5em 0;
+}
+.CourseDetailsStudentsTitle {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+.CourseDetailsStudentsCards {
+  display: grid;
+  grid-gap: 1em;
+}
+/* -----------FeatureClass---------------------------------------- */
+.FeatureClass {
+  margin: 5em 0;
+}
+.FeatureClassTitle {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1em 0;
+}
+/* -------CourseDetailsRight---------------------------------------- */
 .CourseDetailsRight {
-  position: sticky;
-  top: 0;
+  display: flex;
+  flex: 1;
+  z-index: -1 !important;
+  /* position: absolute; */
+  /* position: fixed; */
+  /* left: 600px; */
 }
 .CourseDetailsRightCC {
-  /* position: sticky;
-  top: 0; */
   border: none;
   box-shadow: 5px 5px 15px rgba(91, 86, 86, 0.25);
+}
+.CourseDetailsRight .fixed {
+  position: fixed;
+  top: 80px;
 }
 .CourseDetailsRightC {
   margin: 20px;

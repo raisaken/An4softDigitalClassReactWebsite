@@ -1,0 +1,41 @@
+.StudentsBoughtCard {
+  display: flex;
+}
+.StudentsBoughtCardbackground {
+  background-color: #562121;
+  height: 10em;
+  width: 10em;
+  border-radius: 3px;
+}
+.StudentsBoughtCardDesc {
+  margin-left: 20px;
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.StudentsBoughtCardDescTitle{
+    font-size: 25px;
+    font-weight: 600;
+}
+.StudentsBoughtCardDescname{
+    font-size: 28px;
+    font-weight: 500;
+}
+.StudentsBoughtCardDescRank{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.StudentsBoughtCardDescSeller{
+background-color: #FFC000;
+padding: 2px 5px;
+width: 5em;
+border-radius: 5px;
+}
+.StudentsBoughtCardPrice{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}

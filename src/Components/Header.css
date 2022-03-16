@@ -1,36 +1,39 @@
 .header {
   height: 653px;
   background: #005b7f;
-  font-family: "Montserrat";
+  font-family: var(--font-Montserrat);
 }
-.headerbody{
+.headerbody {
   display: flex;
   align-items: center;
 }
 
 .headerHeading {
-  width: 593px;
-  height: 91px;
   font-weight: 800;
   font-size: 45px;
   line-height: 50px;
   letter-spacing: 0.01em;
-  margin: 20px 0 20px 0;
+  margin: 30px 0;
   color: #ffffff;
 }
-.headerbodydesc{
-  width: 800px;
+.headerbodydesc {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
 }
 .headerDesc {
-  width: 522px;
-  height: 48px;
-  font-weight: 400;
+  
+  font-weight: 300;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.01em;
   color: #ffffff;
+  max-width: 25em;
+  letter-spacing: 0.01em;
 }
 .FemaleImg {
-  position: relative;
-  top:48px;
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  margin: 48px 0 0 0;
 }

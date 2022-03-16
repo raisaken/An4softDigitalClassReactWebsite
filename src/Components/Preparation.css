@@ -3,8 +3,8 @@
   background-color: #f4f3f4;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
+
 .PreparationContainerDesc {
   display: flex;
   justify-content: space-between;
@@ -29,10 +29,7 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .PreparationCards {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 25px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }

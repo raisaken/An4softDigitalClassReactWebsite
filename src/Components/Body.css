@@ -1,8 +1,7 @@
 .mainBody {
   overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
-
-
 
 /* ------------------------------------------------------ */
 
@@ -14,7 +13,6 @@
 
 .MostClass {
   width: 375px;
-  /* height: 37px; */
   margin: 0px 0px 30px 0px;
   font-family: "Montserrat";
   font-style: normal;
@@ -24,19 +22,35 @@
   letter-spacing: 0.01em;
   color: #000000;
 }
-.SubscribedClassCard{
-  display: flex;
-  justify-content: space-between;
-
+.SubscribedClassCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
 }
-/* ---------------------------------------------------------------------- */
+/* --------Learnany-------------------------------------------------------------- */
 .Learnany {
   background: #e7f1fe;
-  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8em 0;
+  /* height: 480px; */
 }
-.LearnanyCol {
+.LearnanyDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.LearnanyGroupA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.LearnanyGroupB {
   position: relative;
-  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .LearnanyTitle {
@@ -73,56 +87,84 @@
   transition: 0.2s;
 }
 .LearnanyButton:hover {
-  border:1px solid rgb(128, 88, 88);
-}
-.Rec1 {
-  position: relative;
-  top: -40px;
-  width: 318px;
-  height: 303px;
-}
-.Rec2 {
-  position: relative;
-  right: -58px;
-  top: -20px;
-}
-.Rec3 {
-  position: relative;
-  top: -400px;
-  left: 330px;
+  border: 1px solid rgb(128, 88, 88);
 }
 
-/* --------------------------------------------------------- */
+.Rec1 {
+  /* position: relative;
+  top: -40px; */
+}
+
+.Rec1ImgA {
+  position: absolute;
+  max-width: 300px;
+  top: -10em;
+  width: 100%;
+  height: auto;
+}
+
+.Rec2 {
+  /* position: relative;
+  right: -58px;
+  top: -20px;*/
+}
+.Rec1ImgB {
+  max-width: 250px;
+  position: absolute;
+  left: 50px;
+  top: 9em;
+  width: 100%;
+  height: auto;
+}
+
+.Rec3 {
+  /* position: relative;
+  top: -400px;
+  left: 330px; */
+  /* max-width: 400px; */
+}
+.Rec1ImgC {
+  position: absolute;
+  max-width: 300px;
+  /* top: -400px; */
+  left: 320px;
+  width: 100%;
+  height: auto;
+}
+
+/* --------interested------------------------------------------------- */
 
 .interested {
-  height: 600px;
+  margin: 10em 0 15em 0;
+}
+.interesteddiv {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .vector1 {
-  position: relative;
-  left: 300px;
-  top: 60px;
+  position: absolute;
+  left: 60px;
+  top: -40px;
 }
 
 .vector2 {
-  position: relative;
-  left: -50px;
-  top: -70px;
+  position: absolute;
+  left: -60px;
+  top: 40px;
 }
 .vector3 {
-  position: relative;
-  top: -450px;
-  left: 120px;
+  position: absolute;
+  /* top: -450px;
+  left: 120px; */
 }
 .interestedCol {
-  position: relative;
-  top: 200px;
-  left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .interestedColTitle {
-  width: 400px;
-  height: 76px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -132,11 +174,7 @@
   color: #000000;
 }
 .interestedColDesc {
-  position: relative;
-  left: 85px;
-  width: 309px;
-  height: 24px;
-  font-family: "Montserrat";
+  margin: 1em 0;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -146,9 +184,6 @@
   color: #110000;
 }
 .interestedColBut {
-  position: relative;
-  top: 50px;
-  left: 200px;
   padding: 20px 50px;
   color: #0e6486;
   box-shadow: 0px 12px 35px rgba(41, 32, 5, 0.2);
@@ -157,5 +192,12 @@
   background: #ffffff;
 }
 .interestedColBut:hover {
-  border:1px solid rgb(128, 88, 88);
+  border: 1px solid rgb(128, 88, 88);
+}
+
+@media screen and (max-width: 1050px) {
+  .LearnanyDetails {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -13,8 +13,8 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="body">
-      <Container>
+    <div className="footerbody">
+      <Container className="footerbodyContainer">
         <Row>
           <Col>
             <Row className="logoRow">

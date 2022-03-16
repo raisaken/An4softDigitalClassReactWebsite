@@ -1,11 +1,22 @@
-import React from "react";
-import { Breadcrumb, Card, CardImg, Container } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import {
+  Breadcrumb,
+  Card,
+  CardImg,
+  Container,
+  Tab,
+  Tabs,
+} from "react-bootstrap";
 import Footer from "../Footer";
 import Ratings from "../ReusableComponents/Ratings/Ratings";
 import Rectangle1061 from "../../Pictures/Rectangle 1061.png";
 import "./Course.css";
 import DigitalclassNavbar from "../DigitalclassNavbar/DigitalclassNavbar";
 import styled from "styled-components";
+import Instructor from "../Instructor/Instructor";
+import Mycard from "../Mycard";
+import StudentsBoughtCard from "../StudentsBoughtCard/StudentsBoughtCard";
+import ModalVideo from "react-modal-video";
 
 const ModifiedRatings = styled(Ratings)`
   background-color: red;
@@ -15,6 +26,35 @@ const ModifiedRatings = styled(Ratings)`
 `;
 
 function Course() {
+  const [key, setKey] = useState("home");
+  const text =
+    "Science training is the instructing and learning of science to  non-researchers, for example, younger students, undergrads, or  grown-ups inside the overall population. The field of science  training remembers work for science content, science process  (the logical technique), some sociology, and some instructing  instructional method. The principles for science training give  desires to the advancement of comprehension for understudies  through the whole course of their K-12 instruction and past. The  customary subjects remembered for the measures are physical,  life, earth, space, and human sciences.";
+
+  const [isOpen, setOpen] = useState(false);
+
+  let listener = null;
+  const [scrollState, setScrollState] = useState("top");
+  const [Showmore, setShowmore] = useState(false);
+  console.log(scrollState, "From scrollState");
+
+  useEffect(() => {
+    // eslint-disable-next-line
+    listener = document.addEventListener("scroll", (e) => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 0) {
+        if (scrollState !== "active") {
+          setScrollState("active");
+        }
+      } else {
+        if (scrollState !== "top") {
+          setScrollState("top");
+        }
+      }
+    });
+    return () => {
+      document.removeEventListener("scroll", listener);
+    };
+  }, [scrollState]);
   return (
     <div className="Course">
       <DigitalclassNavbar />
@@ -22,13 +62,23 @@ function Course() {
         <Container>
           <div className="CourseDetailsDesc">
             <div className="CourseDetailsLeft">
-              <Breadcrumb>
-                <Breadcrumb.Item href="#">Programming</Breadcrumb.Item>
-                <Breadcrumb.Item active>Node Js</Breadcrumb.Item>
+              <Breadcrumb className="CourseDetailsLeftBreadcrumb">
+                <Breadcrumb.Item
+                  href="#"
+                  className="CourseDetailsLeftBreadcrumbItemA"
+                >
+                  Programming
+                </Breadcrumb.Item>
+                <Breadcrumb.Item
+                  active
+                  className="CourseDetailsLeftBreadcrumbItemB"
+                >
+                  Node Js
+                </Breadcrumb.Item>
               </Breadcrumb>
-              <div>
+              {/* <div>
                 <ModifiedRatings>Modified Button</ModifiedRatings>
-              </div>
+              </div> */}
               <div className="Preview">Preview this Course</div>
               <div className="PreviewItems">
                 <div>
@@ -44,25 +94,87 @@ function Course() {
                   ✓ 5 Introduction Of Plastic Its Use And Characteristics
                 </div>
               </div>
+              {/* -----------Description-------------------------------------------------- */}
               <div className="Description">Description</div>
               <div className="DescriptionDetails">
-                Science training is the instructing and learning of science to
-                non-researchers, for example, younger students, undergrads, or
-                grown-ups inside the overall population. The field of science
-                training remembers work for science content, science process
-                (the logical technique), some sociology, and some instructing
-                instructional method. The principles for science training give
-                desires to the advancement of comprehension for understudies
-                through the whole course of their K-12 instruction and past. The
-                customary subjects remembered for the measures are physical,
-                life, earth, space, and human sciences.
+                {Showmore ? text : text.substring(0, 250)}
               </div>
-              <div className="Showmore">Show more</div>
+              <div className="Onclickmore">
+                <div
+                  className="Showmore"
+                  onClick={() => setShowmore(!Showmore)}
+                >
+                  {Showmore ? "Show Less " : "Show more"}
+                </div>
+              </div>
+              {/* ----------Instructor------------------------------------------------- */}
+              <div>
+                <div>
+                  <Tabs
+                    id="controlled-tab-example"
+                    activeKey={key}
+                    onSelect={(k) => setKey(k)}
+                    className="mb-3 InstructorsTitle"
+                  >
+                    <Tab
+                      eventKey="home"
+                      title="Instructors"
+                      className="InstructorsTitle"
+                    >
+                      <Instructor />
+                    </Tab>
+                    <Tab eventKey="profile" title="Curriculam">
+                      <Instructor />
+                    </Tab>
+                    <Tab eventKey="contact" title="Reviews">
+                      <Instructor />
+                    </Tab>
+                  </Tabs>
+                </div>
+              </div>
+              {/* --------Students also bought-------------------------------------------  */}
+              <div className="CourseDetailsStudents">
+                <div className="CourseDetailsStudentsTitle">
+                  Students also bought
+                </div>
+                <div className="CourseDetailsStudentsCards">
+                  <StudentsBoughtCard />
+                  <StudentsBoughtCard />
+                  <StudentsBoughtCard />
+                  <StudentsBoughtCard />
+                </div>
+              </div>
+              {/* ------Feature Class--------------------------------------- */}
+              <div className="FeatureClass">
+                <div className="FeatureClassTitle">Feature Class</div>
+                <div className="FeatureClassCards">
+                  <Mycard />
+                  <Mycard />
+                  <Mycard />
+                  <Mycard />
+                </div>
+              </div>
             </div>
-
-            <div className="CourseDetailsRight">
-              <Card className="CourseDetailsRightCC">
+            <div className={`CourseDetailsRight`}>
+              <Card
+                className={`${
+                  scrollState === "active" ? "fixed" : ""
+                } CourseDetailsRightCC`}
+              >
                 <CardImg src={Rectangle1061}></CardImg>
+                <React.Fragment>
+                  <ModalVideo
+                    channel="youtube"
+                    autoplay
+                    isOpen={isOpen}
+                    videoId="L61p2uyiMSo"
+                    onClose={() => setOpen(false)}
+                  />
+
+                  <button className="btn-primary" onClick={() => setOpen(true)}>
+                    VIEW DEMO
+                  </button>
+                </React.Fragment>
                 <div className="CourseDetailsRightC">
                   <Container className="CourseDetailsRightContainer">
                     <div className="CourseDetailsRightPrice">Rs. 500.00</div>

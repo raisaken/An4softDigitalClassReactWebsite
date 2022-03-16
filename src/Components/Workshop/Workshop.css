@@ -1,9 +1,9 @@
 .Workshop {
-  height: 600px;
+  margin: 10em 0 5em 0;
   background: #005b7f;
   display: flex;
   align-items: center;
-  font-family: "Montserrat";
+  font-family: var(--font-Montserrat);
 }
 
 .WorkshopContainer {
@@ -78,13 +78,10 @@
   filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.25));
 }
 .EnglishTeacher {
-  position: relative;
-  top: 44px;
+  
 }
 .Rectangle994 {
   position: absolute;
-  /* top: 1650px; */
   height: 200px;
-  /* top: 20px; */
   width: 100%;
 }
