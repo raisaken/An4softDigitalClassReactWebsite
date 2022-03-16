@@ -62,7 +62,7 @@
   font-size: 18px;
   color: rgba(1, 13, 18, 0.7);
 }
-.Onclickmore{
+.Onclickmore {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -171,6 +171,10 @@
   border-radius: 5px;
   background-color: #ffc000;
 }
+/* .BuyNow:hover {
+  box-shadow: 10px 20px 40px red;
+  background-color: #000;
+} */
 .AddtoCart {
   margin: 20px 0 0 0;
   border: 1px solid #0e6486;

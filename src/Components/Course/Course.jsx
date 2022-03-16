@@ -17,6 +17,7 @@ import Instructor from "../Instructor/Instructor";
 import Mycard from "../Mycard";
 import StudentsBoughtCard from "../StudentsBoughtCard/StudentsBoughtCard";
 import ModalVideo from "react-modal-video";
+import { FiYoutube } from "react-icons/fi";
 
 const ModifiedRatings = styled(Ratings)`
   background-color: red;
@@ -156,25 +157,28 @@ function Course() {
               </div>
             </div>
             <div className={`CourseDetailsRight`}>
+              {/* <React.Fragment>
+                <ModalVideo
+                  channel="youtube"
+                  autoplay  
+                  isOpen={isOpen}
+                  videoId="L61p2uyiMSo"
+                  onClose={() => setOpen(false)}
+                />
+                <FiYoutube
+                  className="btn-primary"
+                  onClick={() => setOpen(true)}
+                  style={{ zIndex: "1", position: "absolute", top: "50px", left:"-50px" }}
+                />
+                <button>VIEW DEMO</button>
+              </React.Fragment> */}
               <Card
                 className={`${
                   scrollState === "active" ? "fixed" : ""
                 } CourseDetailsRightCC`}
               >
                 <CardImg src={Rectangle1061}></CardImg>
-                <React.Fragment>
-                  <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={isOpen}
-                    videoId="L61p2uyiMSo"
-                    onClose={() => setOpen(false)}
-                  />
 
-                  <button className="btn-primary" onClick={() => setOpen(true)}>
-                    VIEW DEMO
-                  </button>
-                </React.Fragment>
                 <div className="CourseDetailsRightC">
                   <Container className="CourseDetailsRightContainer">
                     <div className="CourseDetailsRightPrice">Rs. 500.00</div>

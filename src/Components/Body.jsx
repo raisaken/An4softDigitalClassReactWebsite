@@ -23,7 +23,6 @@ import PreparationCard from "./PreparationCard";
 import Preparation from "./Preparation";
 import Header from "./Header";
 import Workshop from "./Workshop/Workshop";
-import Test from "../Test";
 
 function Body() {
   const [key, setKey] = useState("home");
