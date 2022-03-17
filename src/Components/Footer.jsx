@@ -15,13 +15,13 @@ function Footer() {
   return (
     <div className="footerbody">
       <Container className="footerbodyContainer">
-        <Row>
-          <Col>
-            <Row className="logoRow">
+        <div className=" footerbodyContainerUpper">
+          <div className=" footerbodyContainerUpperA">
+            <div className="logoRow">
               <div>
                 <img src={Logo1} alt="" className="footerLogo" />
               </div>
-            </Row>
+            </div>
             <div className="newIcons">
               <div className="footerIcons">
                 <div>
@@ -41,38 +41,36 @@ function Footer() {
                 </div>
               </div>
             </div>
-          </Col>
-          <Col>
+          </div>
+          <div className=" footerbodyContainerUpperB">
             <div className="programs1">
-              <div>
-                <p className="programs">PROGRAMS</p>
-                <Stack gap={3}>
-                  <div className="singleProgram">Math</div>
-                  <div className="singleProgram">Science</div>
-                  <div className="singleProgram">Japanese language</div>
-                  <div className="singleProgram">Korean Language</div>
-                  <div className="singleProgram">Nepali</div>
-                </Stack>
-              </div>
-              <div>
-                <p className="programs">COMPANY</p>
-                <Stack gap={3}>
-                  <div className="singleProgram">About us</div>
-                  <div className="singleProgram">Privacy Policy</div>
-                  <div className="singleProgram">Terms and Conditions</div>
-                </Stack>
-              </div>
+              <p className="programs">PROGRAMS</p>
+              <Stack gap={3}>
+                <div className="singleProgram">Math</div>
+                <div className="singleProgram">Science</div>
+                <div className="singleProgram">Japanese language</div>
+                <div className="singleProgram">Korean Language</div>
+                <div className="singleProgram">Nepali</div>
+              </Stack>
             </div>
-          </Col>
-          <Col  className="contact">
+            <div className="COMPANY">
+              <p className="programs">COMPANY</p>
+              <Stack gap={3}>
+                <div className="singleProgram">About us</div>
+                <div className="singleProgram">Privacy Policy</div>
+                <div className="singleProgram">Terms and Conditions</div>
+              </Stack>
+            </div>
+          </div>
+          <div className=" footerbodyContainerUpperC">
             <p>CONTACT</p>
             <Stack gap={3}>
               <div className="singleProgram">Anamnagar Kathmandu</div>
               <div className="singleProgram">info@edigitalclass.com</div>
               <div className="singleProgram">9810233097</div>
             </Stack>
-          </Col>
-        </Row>
+          </div>
+        </div>
 
         <div>
           <hr />

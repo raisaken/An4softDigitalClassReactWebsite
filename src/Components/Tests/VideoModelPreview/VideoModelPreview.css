@@ -1,0 +1,18 @@
+.PreviewVideoModel {
+  height: 2em;
+  width: 3em;
+  color: rgb(238, 44, 44);
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 5px 5px 30px black;
+
+}
+.PreviewVideoModel:hover {
+  transform: scale(1.25);
+  color: rgb(240, 52, 52);
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: 5px 5px 15px black; */
+}

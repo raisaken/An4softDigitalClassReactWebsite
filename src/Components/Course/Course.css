@@ -1,15 +1,12 @@
-@use "react-modal-video/scss/modal-video.scss";
-
 .Course {
   font-family: "Montserrat";
-  margin: 5em 0 0 0;
+  /* margin: 5em 0 0 0; */
   /* overflow-x: hidden; */
 }
 .CourseDetails {
 }
 .CourseDetailsDesc {
   display: flex;
-
 }
 .CourseDetailsLeft {
   position: relative;
@@ -22,13 +19,14 @@
   height: 100%;
   position: sticky;
   top: 80px;
-  background-color: red;
-  /* display: flex;
-  flex: 1;
-  z-index: -1 !important; */
-  /* position: absolute; */
-  /* position: fixed; */
-  /* left: 600px; */
+  border-radius: 1em;
+  /* background-color: red; */
+}
+.Course .CardVideoModelPreview{
+  width: 100%;
+  position: absolute;
+  top: 14%;
+  left: 42%;
 }
 .CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemA {
   font-size: 30px;
@@ -135,9 +133,8 @@
   position: fixed;
   top: 80px;
 }
-.Course .Playbutton:hover{
+.Course .Playbutton:hover {
   background-color: #000 !important;
-
 }
 .CourseDetailsRightC {
   margin: 20px;

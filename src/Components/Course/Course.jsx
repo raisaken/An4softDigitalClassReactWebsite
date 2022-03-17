@@ -12,6 +12,7 @@ import Ratings from "../ReusableComponents/Ratings/Ratings";
 import Rectangle1061 from "../../Pictures/Rectangle 1061.png";
 import "./Course.css";
 import DigitalclassNavbar from "../DigitalclassNavbar/DigitalclassNavbar";
+import VideoModelPreview from "../Tests/VideoModelPreview/VideoModelPreview";
 import styled from "styled-components";
 import Instructor from "../Instructor/Instructor";
 import Mycard from "../Mycard";
@@ -33,7 +34,6 @@ function Course() {
 
   const [isOpen, setOpen] = useState(false);
   const [Showmore, setShowmore] = useState(false);
-
 
   // let listener = null;
   // const [scrollState, setScrollState] = useState("top");
@@ -78,25 +78,7 @@ function Course() {
                   Node Js
                 </Breadcrumb.Item>
               </Breadcrumb>
-              <div className="Playbutton">
-                <React.Fragment>
-                  <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={isOpen}
-                    videoId="L61p2uyiMSo"
-                    onClose={() => setOpen(false)}
-                  />
-                  {/* <FiYoutube
-                  className="btn-primary"
-                  onClick={() => setOpen(true)}
-                  style={{ zIndex: "1", position: "absolute", top: "50px", left:"-50px" }}
-                /> */}
-                  <button className="btn-primary" onClick={() => setOpen(true)}>
-                    VIEW DEMO
-                  </button>
-                </React.Fragment>
-              </div>
+              
               {/* <div>
                 <ModifiedRatings>Modified Button</ModifiedRatings>
               </div> */}
@@ -177,13 +159,18 @@ function Course() {
               </div>
             </div>
             <div className={`CourseDetailsRight`}>
-              <Card className="CourseDetailsRightCC"
+              <Card
+                className="CourseDetailsRightCC"
                 // className={`${
                 //   scrollState === "active" ? "fixed" : ""
                 // } CourseDetailsRightCC`}
               >
-                <CardImg src={Rectangle1061}></CardImg>
-
+                <div>
+                  <CardImg src={Rectangle1061}></CardImg>
+                </div>
+                <div className="CardVideoModelPreview">
+                  <VideoModelPreview />
+                </div>
                 <div className="CourseDetailsRightC">
                   <Container className="CourseDetailsRightContainer">
                     <div className="CourseDetailsRightPrice">Rs. 500.00</div>

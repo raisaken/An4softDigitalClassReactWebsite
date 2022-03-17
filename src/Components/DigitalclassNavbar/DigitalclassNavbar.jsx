@@ -5,34 +5,36 @@ import "./DigitalclassNavbar.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 function DigitalclassNavbar() {
-  let listener = null;
-  const [scrollState, setScrollState] = useState("top");
+  // let listener = null;
+  // const [scrollState, setScrollState] = useState("top");
 
-  console.log(scrollState, "From scrollState navbar");
+  // console.log(scrollState, "From scrollState navbar");
 
-  useEffect(() => {
-    // eslint-disable-next-line
-    listener = document.addEventListener("scroll", (e) => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 0) {
-        if (scrollState !== "active") {
-          setScrollState("active");
-        }
-      } else {
-        if (scrollState !== "top") {
-          setScrollState("top");
-        }
-      }
-    });
-    return () => {
-      document.removeEventListener("scroll", listener);
-    };
-  }, [scrollState]);
+  // useEffect(() => {
+  //   // eslint-disable-next-line
+  //   listener = document.addEventListener("scroll", (e) => {
+  //     var scrolled = document.scrollingElement.scrollTop;
+  //     if (scrolled >= 0) {
+  //       if (scrollState !== "active") {
+  //         setScrollState("active");
+  //       }
+  //     } else {
+  //       if (scrollState !== "top") {
+  //         setScrollState("top");
+  //       }
+  //     }
+  //   });
+  //   return () => {
+  //     document.removeEventListener("scroll", listener);
+  //   };
+  // }, [scrollState]);
   return (
     <div
-      className={`${
-        scrollState === "active" ? "fixednav" : ""
-      } DigitalclassNavbar`}
+      className="DigitalclassNavbar"
+      // {
+      //   `${
+      //   scrollState === "active" ? "fixednav" : ""
+      // } DigitalclassNavbar`}
     >
       <Navbar expand="lg">
         <Container>
@@ -46,6 +48,15 @@ function DigitalclassNavbar() {
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action{" "}
+              <NavDropdown title="All Courses" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action{" "}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Something
+                </NavDropdown.Item>
+              </NavDropdown>
             </NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
           </NavDropdown>
