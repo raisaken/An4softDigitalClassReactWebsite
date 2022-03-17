@@ -7,6 +7,7 @@
   font-family: var(--font-Montserrat);
   background-color: #005b7f;
   font-weight: 600;
+  width: 100%;
 }
 .MultilevelDropdownDigitalClassContainer {
   display: flex;

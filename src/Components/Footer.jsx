@@ -1,15 +1,11 @@
 import React from "react";
-import { Col, Container, Row, Stack } from "react-bootstrap";
+import { Container, Stack } from "react-bootstrap";
 import Logo1 from "../Pictures/logo- 1.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import "./Footer.css";
-<link
-  href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap"
-  rel="stylesheet"
-></link>;
 
 function Footer() {
   return (

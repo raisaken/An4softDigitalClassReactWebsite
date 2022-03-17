@@ -39,3 +39,12 @@
   justify-content: end;
   margin: 48px 0 0 0;
 }
+
+/* -----responsive---------------------------------------------------------------- */
+
+@media screen and (max-width: 1050px){
+  .headerbody{
+    display: flex;
+    flex-direction: column;
+  }
+}

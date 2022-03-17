@@ -1,9 +1,9 @@
 .Mycard {
   border: none !important;
-  font-family: var(--font-Montserrat);
+  font-family: var(--font-Poppins);
 }
 .CardImgTransparent {
-  position: absolute;
+  position: absolute; 
   top: 35px;
 }
 .CardDesc {

@@ -1,5 +1,7 @@
 .StudentsBoughtCard {
   display: flex;
+  /* z-index: 2000 !important; */
+
 }
 .StudentsBoughtCardbackground {
   background-color: #562121;
@@ -30,8 +32,10 @@
 .StudentsBoughtCardDescSeller{
 background-color: #FFC000;
 padding: 2px 5px;
-width: 5em;
+width: 30%;
 border-radius: 5px;
+display: flex;
+justify-content: center;
 }
 .StudentsBoughtCardPrice{
     display: flex;

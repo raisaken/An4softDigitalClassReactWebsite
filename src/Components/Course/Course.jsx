@@ -10,6 +10,7 @@ import {
 import Footer from "../Footer";
 import Ratings from "../ReusableComponents/Ratings/Ratings";
 import Rectangle1061 from "../../Pictures/Rectangle 1061.png";
+import Ellipse6 from "../../Pictures/Ellipse 6.png";
 import "./Course.css";
 import VideoModelPreview from "../Tests/VideoModelPreview/VideoModelPreview";
 import styled from "styled-components";
@@ -17,7 +18,10 @@ import Instructor from "../Instructor/Instructor";
 import Mycard from "../Mycard";
 import StudentsBoughtCard from "../StudentsBoughtCard/StudentsBoughtCard";
 import ModalVideo from "react-modal-video";
-import { FiYoutube } from "react-icons/fi";
+import { IoMdContact } from "react-icons/io";
+import { FaStar } from "react-icons/fa";
+import { AiFillEye } from "react-icons/ai";
+
 import NavbarDigitalClass from "../ReusableComponents/NavbarDigitalClass/NavbarDigitalClass";
 
 const ModifiedRatings = styled(Ratings)`
@@ -59,7 +63,7 @@ function Course() {
   // }, [scrollState]);
   return (
     <div className="Course">
-      <NavbarDigitalClass/>
+      <NavbarDigitalClass />
       <div className="CourseDetails">
         <Container>
           <div className="CourseDetailsDesc">
@@ -78,10 +82,37 @@ function Course() {
                   Node Js
                 </Breadcrumb.Item>
               </Breadcrumb>
-              
-              {/* <div>
-                <ModifiedRatings>Modified Button</ModifiedRatings>
-              </div> */}
+
+              <div>
+                Learn Node JS for beginners and practice basic programming
+                language from home with this basic online programming course.
+              </div>
+              <div className="CourseDetailsLeftstarrate">
+                <div className="CourseDetailsLeftstarrateGroupA">
+                  4.7 <FaStar className="FaStar" />
+                  <FaStar className="FaStar" />
+                  <FaStar className="FaStar" />
+                  <FaStar className="FaStar" />
+                  <FaStar className="FaStar" />
+                </div>
+                <div>
+                  <AiFillEye />
+                  1000 view
+                </div>
+              </div>
+              <div className="CourseDetailsLeftImgDesc">
+                <div>
+                  <img src={Ellipse6} alt="" className="CourseDetailsLeftImgDescOnlyImg"/>
+                </div>
+                <div>
+                  <div  className="CourseDetailsLeftImgDescTitle">By Raju Hamal</div>
+                  <div  className="CourseDetailsLeftImgDescDetails">More than 6 year of experience</div>
+                </div>
+              </div>
+              <div className="CourseDetailsLeftIoMdContact">
+                <IoMdContact className="CourseDetailsLeftIoMdContactGA"/>
+                1546 already enrolled
+              </div>
               <div className="Preview">Preview this Course</div>
               <div className="PreviewItems">
                 <div>

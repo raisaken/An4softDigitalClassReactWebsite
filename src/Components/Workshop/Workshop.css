@@ -3,7 +3,7 @@
   background: #005b7f;
   display: flex;
   align-items: center;
-  font-family: var(--font-Montserrat);
+  font-family: var(--font-Poppins);
 }
 
 .WorkshopContainer {
@@ -78,10 +78,18 @@
   filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.25));
 }
 .EnglishTeacher {
-  
 }
 .Rectangle994 {
   position: absolute;
   height: 200px;
   width: 100%;
+}
+
+/* --------responsive------------------------------------------------------------- */
+
+@media screen and (max-width: 1050px) {
+  .WorkshopContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
