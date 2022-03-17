@@ -2,11 +2,14 @@
 
 .Course {
   font-family: "Montserrat";
-  overflow: hidden;
   margin: 5em 0 0 0;
+  /* overflow-x: hidden; */
 }
 .CourseDetails {
-  /* margin: 6em 0 0 0; */
+}
+.CourseDetailsDesc {
+  display: flex;
+
 }
 .CourseDetailsLeft {
   position: relative;
@@ -15,10 +18,17 @@
   flex: 2;
   margin: 0 15em 0 0;
 }
-.CourseDetailsDesc {
-  display: flex;
-  /* justify-content: space-between; */
-  position: relative;
+.CourseDetailsRight {
+  height: 100%;
+  position: sticky;
+  top: 80px;
+  background-color: red;
+  /* display: flex;
+  flex: 1;
+  z-index: -1 !important; */
+  /* position: absolute; */
+  /* position: fixed; */
+  /* left: 600px; */
 }
 .CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemA {
   font-size: 30px;
@@ -117,14 +127,6 @@
   margin: 1em 0;
 }
 /* -------CourseDetailsRight---------------------------------------- */
-.CourseDetailsRight {
-  display: flex;
-  flex: 1;
-  z-index: -1 !important;
-  /* position: absolute; */
-  /* position: fixed; */
-  /* left: 600px; */
-}
 .CourseDetailsRightCC {
   border: none;
   box-shadow: 5px 5px 15px rgba(91, 86, 86, 0.25);
@@ -132,6 +134,10 @@
 .CourseDetailsRight .fixed {
   position: fixed;
   top: 80px;
+}
+.Course .Playbutton:hover{
+  background-color: #000 !important;
+
 }
 .CourseDetailsRightC {
   margin: 20px;

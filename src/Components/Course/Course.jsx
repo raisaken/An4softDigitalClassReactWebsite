@@ -32,30 +32,31 @@ function Course() {
     "Science training is the instructing and learning of science to  non-researchers, for example, younger students, undergrads, or  grown-ups inside the overall population. The field of science  training remembers work for science content, science process  (the logical technique), some sociology, and some instructing  instructional method. The principles for science training give  desires to the advancement of comprehension for understudies  through the whole course of their K-12 instruction and past. The  customary subjects remembered for the measures are physical,  life, earth, space, and human sciences.";
 
   const [isOpen, setOpen] = useState(false);
-
-  let listener = null;
-  const [scrollState, setScrollState] = useState("top");
   const [Showmore, setShowmore] = useState(false);
-  console.log(scrollState, "From scrollState");
 
-  useEffect(() => {
-    // eslint-disable-next-line
-    listener = document.addEventListener("scroll", (e) => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 0) {
-        if (scrollState !== "active") {
-          setScrollState("active");
-        }
-      } else {
-        if (scrollState !== "top") {
-          setScrollState("top");
-        }
-      }
-    });
-    return () => {
-      document.removeEventListener("scroll", listener);
-    };
-  }, [scrollState]);
+
+  // let listener = null;
+  // const [scrollState, setScrollState] = useState("top");
+  // console.log(scrollState, "From scrollState");
+
+  // useEffect(() => {
+  //   // eslint-disable-next-line
+  //   listener = document.addEventListener("scroll", (e) => {
+  //     var scrolled = document.scrollingElement.scrollTop;
+  //     if (scrolled >= 0) {
+  //       if (scrollState !== "active") {
+  //         setScrollState("active");
+  //       }
+  //     } else {
+  //       if (scrollState !== "top") {
+  //         setScrollState("top");
+  //       }
+  //     }
+  //   });
+  //   return () => {
+  //     document.removeEventListener("scroll", listener);
+  //   };
+  // }, [scrollState]);
   return (
     <div className="Course">
       <DigitalclassNavbar />
@@ -77,6 +78,25 @@ function Course() {
                   Node Js
                 </Breadcrumb.Item>
               </Breadcrumb>
+              <div className="Playbutton">
+                <React.Fragment>
+                  <ModalVideo
+                    channel="youtube"
+                    autoplay
+                    isOpen={isOpen}
+                    videoId="L61p2uyiMSo"
+                    onClose={() => setOpen(false)}
+                  />
+                  {/* <FiYoutube
+                  className="btn-primary"
+                  onClick={() => setOpen(true)}
+                  style={{ zIndex: "1", position: "absolute", top: "50px", left:"-50px" }}
+                /> */}
+                  <button className="btn-primary" onClick={() => setOpen(true)}>
+                    VIEW DEMO
+                  </button>
+                </React.Fragment>
+              </div>
               {/* <div>
                 <ModifiedRatings>Modified Button</ModifiedRatings>
               </div> */}
@@ -157,25 +177,10 @@ function Course() {
               </div>
             </div>
             <div className={`CourseDetailsRight`}>
-              {/* <React.Fragment>
-                <ModalVideo
-                  channel="youtube"
-                  autoplay  
-                  isOpen={isOpen}
-                  videoId="L61p2uyiMSo"
-                  onClose={() => setOpen(false)}
-                />
-                <FiYoutube
-                  className="btn-primary"
-                  onClick={() => setOpen(true)}
-                  style={{ zIndex: "1", position: "absolute", top: "50px", left:"-50px" }}
-                />
-                <button>VIEW DEMO</button>
-              </React.Fragment> */}
-              <Card
-                className={`${
-                  scrollState === "active" ? "fixed" : ""
-                } CourseDetailsRightCC`}
+              <Card className="CourseDetailsRightCC"
+                // className={`${
+                //   scrollState === "active" ? "fixed" : ""
+                // } CourseDetailsRightCC`}
               >
                 <CardImg src={Rectangle1061}></CardImg>
 
