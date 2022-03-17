@@ -22,9 +22,7 @@
   justify-content: center; */
 }
 
-.DigitalclassNavbar #basic-nav-dropdown {
-  letter-spacing: 0.01em;
-}
+
 .navbar-light .navbar-nav .nav-link {
   width: 120px;
   border-radius: 3px;
