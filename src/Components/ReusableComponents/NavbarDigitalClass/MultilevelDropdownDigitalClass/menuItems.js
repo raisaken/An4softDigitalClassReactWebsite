@@ -1,38 +1,87 @@
 export const menuItems = [
   {
-    title: "Home",
-  },
-  {
-    title: "Services",
+    title: "All Courses",
     submenu: [
       {
-        title: "web design",
-      },
-      {
-        title: "web development",
+        title: "Primary",
         submenu: [
           {
-            title: "Frontend",
+            title: "Math",
           },
           {
-            title: "Backend",
-            submenu: [
-              {
-                title: "NodeJS",
-              },
-              {
-                title: "PHP",
-              },
-            ],
+            title: "Science",
+          },
+          {
+            title: "Programming",
+          },
+          {
+            title: "Music",
+          },
+          {
+            title: "Account",
           },
         ],
       },
       {
-        title: "SEO",
+        title: "Secondary",
+        submenu: [
+          {
+            title: "Math",
+          },
+          {
+            title: "Science",
+          },
+          {
+            title: "Programming",
+          },
+          {
+            title: "Music",
+          },
+          {
+            title: "Account",
+          },
+        ],
+      },
+      {
+        title: "bachelor",
+        submenu: [
+          {
+            title: "Math",
+          },
+          {
+            title: "Science",
+          },
+          {
+            title: "Programming",
+          },
+          {
+            title: "Music",
+          },
+          {
+            title: "Account",
+          },
+        ],
+      },
+      {
+        title: "Master",
+        submenu: [
+          {
+            title: "Math",
+          },
+          {
+            title: "Science",
+          },
+          {
+            title: "Programming",
+          },
+          {
+            title: "Music",
+          },
+          {
+            title: "Account",
+          },
+        ],
       },
     ],
-  },
-  {
-    title: "About",
   },
 ];

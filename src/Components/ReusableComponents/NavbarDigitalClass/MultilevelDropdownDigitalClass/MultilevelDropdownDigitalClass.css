@@ -1,38 +1,110 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ----------------------------------------------------------------- */
+.MultilevelDropdownDigitalClass {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  padding: 0.5em 0;
+  font-family: var(--font-Montserrat);
+  background-color: #005b7f;
+  font-weight: 600;
+}
+.MultilevelDropdownDigitalClassContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.searchBar {
+  margin-top: 5px;
+  height: 44px;
+  width: 445px;
+  background: #fff1f3;
+  border-radius: 8px;
+}
+.input {
+  position: relative;
+  background: none;
+  border: none;
+  left: 50px;
+  height: 44px;
+  outline: none;
+}
+.searchIcon {
+  position: relative;
+  color: #888c94;
+  float: right;
+  top: 15px;
+  right: 50px;
 }
 
-body {
-  font-family: sans-serif;
+.navbuttons {
+  display: flex;
+  margin: 0 10px 0 10px;
 }
-
-header {
-  height: 58px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  color: #212529;
-}
-
-.nav-area {
+.MultilevelDropdownDigitalClass .navbuttonsRegisterButton {
+  font-family: var(--font-Poppins);
+  font-weight: 600;
+  margin: 0 10px 0 10px;
   display: flex;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 58px;
+  justify-content: center;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0.5em;
+  padding: 0.5em 2em;  
+  z-index: 10;
+  background: #005b7f;
+  box-shadow: 0 20px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
 }
 
-.logo {
-  text-decoration: none;
-  font-size: 25px;
-  color: inherit;
-  margin-right: 20px;
+.MultilevelDropdownDigitalClass .navbuttonsRegisterButton:hover {
+  background-color: #fff;
+  color: #005b7f;
 }
+
+.MultilevelDropdownDigitalClass .navbuttonsLoginButton {
+  font-family: var(--font-Poppins);
+  font-weight: 600;
+  margin: 0 10px 0 10px;
+  padding: 0.5em 2em;
+  display: flex;
+  color: #000;
+  border: none;
+  border-radius: 0.5em;
+  align-items: center;
+  justify-content: center;
+  background: #ffc000;
+}
+.MultilevelDropdownDigitalClass .navbuttonsLoginButton:hover {
+  color: #005b7f;
+  background-color: #fff;
+}
+
+/* -----------------------Responsive--------------------- */
+
+@media (max-width: 1000px) {
+  .searchBar {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .navbuttons {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
 
 .menus {
   display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #fff;
+  background: #005b7f;
+  font-family: var(--font-Poppins);
+  font-weight: 600;
 }
 
 .menu-items {
@@ -48,7 +120,9 @@ header {
 }
 
 .menu-items button {
-  color: inherit;
+  font-family: var(--font-Poppins);
+  font-weight: 600;
+  color: #fff;
   font-size: inherit;
   border: none;
   background-color: transparent;
@@ -64,7 +138,9 @@ header {
 
 .menu-items a:hover,
 .menu-items button:hover {
-  background-color: #f2f2f2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+  color: #005b7f;
 }
 
 .arrow::after {
@@ -88,7 +164,7 @@ header {
   min-width: 10rem;
   padding: 0.5rem 0;
   list-style: none;
-  background-color: #fff;
+  background-color: #005b7f;
   border-radius: 0.5rem;
   display: none;
 }

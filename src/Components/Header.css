@@ -1,8 +1,10 @@
 .header {
-  height: 653px;
+  display: flex;
+  flex-direction: column;
   background: #005b7f;
   font-family: var(--font-Montserrat);
 }
+
 .headerbody {
   display: flex;
   align-items: center;

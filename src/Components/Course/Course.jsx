@@ -11,7 +11,6 @@ import Footer from "../Footer";
 import Ratings from "../ReusableComponents/Ratings/Ratings";
 import Rectangle1061 from "../../Pictures/Rectangle 1061.png";
 import "./Course.css";
-import DigitalclassNavbar from "../DigitalclassNavbar/DigitalclassNavbar";
 import VideoModelPreview from "../Tests/VideoModelPreview/VideoModelPreview";
 import styled from "styled-components";
 import Instructor from "../Instructor/Instructor";
@@ -19,6 +18,7 @@ import Mycard from "../Mycard";
 import StudentsBoughtCard from "../StudentsBoughtCard/StudentsBoughtCard";
 import ModalVideo from "react-modal-video";
 import { FiYoutube } from "react-icons/fi";
+import NavbarDigitalClass from "../ReusableComponents/NavbarDigitalClass/NavbarDigitalClass";
 
 const ModifiedRatings = styled(Ratings)`
   background-color: red;
@@ -59,7 +59,7 @@ function Course() {
   // }, [scrollState]);
   return (
     <div className="Course">
-      <DigitalclassNavbar />
+      <NavbarDigitalClass/>
       <div className="CourseDetails">
         <Container>
           <div className="CourseDetailsDesc">

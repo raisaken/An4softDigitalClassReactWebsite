@@ -23,12 +23,14 @@ import PreparationCard from "./PreparationCard";
 import Preparation from "./Preparation";
 import Header from "./Header";
 import Workshop from "./Workshop/Workshop";
+import NavbarDigitalClass from "./ReusableComponents/NavbarDigitalClass/NavbarDigitalClass";
 
 function Body() {
   const [key, setKey] = useState("home");
 
   return (
     <div className="mainBody">
+      <NavbarDigitalClass/>
       <Header />
       <Courses />
       {/* --------<Workshop /> ----------------------------------------------------------*/}

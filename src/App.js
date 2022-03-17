@@ -16,7 +16,6 @@ function App() {
         <Route path="/course" element={<Course />} />
         <Route path="/stiky" element={<StikyTest />} />
         <Route path="/preview" element={<VideoModelPreview />} />
-        <Route path="/dropdown" element={<MultilevelDropdown />} />
       </Routes>
     </Router>
   );
