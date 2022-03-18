@@ -13,7 +13,11 @@
   margin: 1em 0;
   letter-spacing: 0.02em;
 }
-.Courses .nav-tabs .nav-link {
+
+.Courses .slick-list{
+  max-width: 1500px;
+}
+  .Courses .nav-tabs .nav-link {
   font-weight: 550;
   line-height: 15px;
   letter-spacing: 0.02em;
@@ -34,7 +38,8 @@
   bottom: -64px;
 }
 
-.Courses .slick-prev , .slick-next{
+.Courses .slick-prev,
+.slick-next {
   top: 63%;
 }
 .Courses .slick-dots li button:before {
@@ -67,4 +72,23 @@
 }
 .Courses .nav-tabs {
   border: none;
+}
+
+@media screen and (max-width: 410px) {
+  .Courses .slick-next {
+    display: none;
+  }
+  .Courses .slick-prev {
+    display: none;
+  }
+  .Courses .slick-list{
+    width: 200px;
+  }
+  .Courses .BiChevronBnext{
+    position: relative;
+  }
+  .Courses .BiChevronBprev{
+
+  }
+  
 }

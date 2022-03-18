@@ -1,6 +1,8 @@
 .Languages {
-  height: 550px;
+  margin: 1em 0;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .LanguagesTitle {

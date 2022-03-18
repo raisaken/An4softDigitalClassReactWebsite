@@ -30,7 +30,10 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .PreparationCards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.PreparationCards >*{
+  flex-grow: 1;
 }

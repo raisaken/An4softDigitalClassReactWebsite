@@ -20,7 +20,7 @@ function Header() {
           </div>
 
           <div className="FemaleImg">
-            <img src={Female} alt="" />
+            <img src={Female} alt="" className="FemaleImgFemale" />
           </div>
         </div>
       </Container>

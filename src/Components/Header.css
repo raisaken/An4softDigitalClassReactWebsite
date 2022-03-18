@@ -24,7 +24,6 @@
   flex: 1.5;
 }
 .headerDesc {
-  
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
@@ -38,13 +37,27 @@
   flex: 1;
   justify-content: end;
   margin: 48px 0 0 0;
+  max-width: 100%;
+}
+.FemaleImgFemale{
+  width: 100%;
 }
 
 /* -----responsive---------------------------------------------------------------- */
 
-@media screen and (max-width: 1050px){
-  .headerbody{
+@media screen and (max-width: 1050px) {
+  .headerbody {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .FemaleImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 100%;
   }
 }

@@ -67,7 +67,7 @@ function Body() {
             </div>
             <button className="LearnanyButton">Find out how</button>
           </div>
-          <div className="LearnanyGroupB">
+          <Container className="LearnanyGroupB">
             {/* <div className="Rec1"> */}
             <img src={Rectangle1047} alt="" className="Rec1ImgA" />
             {/* </div> */}
@@ -77,7 +77,7 @@ function Body() {
             {/* <div className="Rec3"> */}
             <img src={Rectangle1048} alt="" className="Rec1ImgC" />
             {/* </div> */}
-          </div>
+          </Container>
         </Container>
       </div>
       <div className="interested">

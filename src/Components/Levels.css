@@ -1,6 +1,8 @@
 .Levels {
-  height: 600px;
+  height: auto;
+  margin: 1em 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: var(--font-Montserrat);
 }

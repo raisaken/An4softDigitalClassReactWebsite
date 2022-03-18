@@ -36,21 +36,14 @@
 /* --------Learnany-------------------------------------------------------------- */
 .Learnany {
   background: #e7f1fe;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
-  padding: 8em 0;
+  padding: 8em 0 0 0;
   height: auto;
 }
 .LearnanyDetails {
   height: auto;
   display: flex;
-  /* flex-direction: row;  */
+  flex-wrap: wrap;
   gap: 1rem;
-
-  /* display: flex; */
-  /* flex-wrap: wrap; */
 }
 
 .LearnanyGroupA {
@@ -65,8 +58,6 @@
 }
 
 .LearnanyTitle {
-  width: 406px;
-  height: 37px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -76,10 +67,9 @@
   color: #000000;
 }
 .LearnanyDesc {
-  width: 530px;
-  height: 70px;
   font-family: "Montserrat";
   font-style: normal;
+  max-width: 80%;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
@@ -108,9 +98,10 @@
 
 .Rec1ImgA {
   position: relative;
-  top: -10em;
   /* max-width: 300px; */
-  max-width: 80%;
+  width: 20%;
+  top: -22.5em;
+  left: 44em;
   height: auto;
 }
 
@@ -121,10 +112,10 @@
 }
 .Rec1ImgB {
   position: absolute;
-  left: 50px;
-  top: 9em;
+  left: 44.5em;
+  top: -6em;
   /* max-width: 250px; */
-  max-width: 80%;
+  width: 20%;
   height: auto;
 }
 
@@ -136,9 +127,10 @@
 }
 .Rec1ImgC {
   position: absolute;
-  left: 320px;
+  top: -220px;
+  left: 62em;
   /* max-width: 300px; */
-  max-width: 80%;
+  width: 20%;
   height: auto;
 }
 
@@ -153,7 +145,7 @@
   position: relative;
   gap: 1em;
 }
-.interesteddivImg{
+.interesteddivImg {
   position: relative;
 }
 
@@ -214,8 +206,8 @@
     display: flex;
     flex-direction: column;
   }
-  .LearnanyGroupB{
-    margin: 12em 0 0 0 ;
+  .LearnanyGroupB {
+    margin: 12em 0 0 0;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -223,19 +215,63 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  .interesteddivImg{
-    margin: 8em 0 8em 2em ;
+  .interesteddivImg {
+    margin: 8em 0 8em 2em;
   }
 }
-/* @media screen and (max-width: 700px) {
-  .SubscribedClassCard {
-    height: 100%;
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 400px) {
+  .LearnanyGroupA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .LearnanyTitle {
+    display: flex;
+    align-items: center;
+  }
+  .LearnanyGroupB {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+  .Rec1ImgA {
+    width: 100%;
+    position: relative;
+    top: -8em;
+    left: 0;
+    text-align: center;
+  }
+  .Rec1ImgB {
+    width: 100%;
+    position: relative;
+    top: -6em;
+    left: 0;
+    text-align: center;
+  }
+  .Rec1ImgC {
+    width: 100%;
+    position: relative;
+    top: -4em;
+    left: 0;
+    text-align: center;
   }
 }
 @media screen and (max-width: 510px) {
-  .SubscribedClassCard {
-    height: 100%;
-    grid-template-columns: repeat(1, 1fr);
+  .interesteddivImg {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
   }
-} */
+  .vector1 {
+    width: 70%;
+  }
+  .vector2 {
+    width: 70%;
+  }
+  .vector3 {
+    width: 70%;
+  }
+}
