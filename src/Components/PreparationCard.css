@@ -2,8 +2,9 @@
   border: none;
   border-top: 8px solid #0e6486 !important;
   border-radius: 5px !important;
-  max-width: 400px;
-  height: 300px;
+  /* max-width: 400px;
+  height: 300px; */
+  padding: 3em 0;
   overflow: hidden;
   display: flex;
   align-items: center;

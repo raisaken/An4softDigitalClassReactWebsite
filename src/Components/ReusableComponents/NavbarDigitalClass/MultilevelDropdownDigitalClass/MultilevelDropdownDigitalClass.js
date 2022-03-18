@@ -2,7 +2,7 @@ import React from "react";
 import "./MultilevelDropdownDigitalClass.css";
 import { menuItems } from "./menuItems";
 import SubMenuItems from "./SubMenuItems";
-import {  Container,  Navbar } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import logo from "../../../../Pictures/office+logo 1.png";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";

@@ -1,9 +1,10 @@
 .Mycard {
   border: none !important;
   font-family: var(--font-Poppins);
+  max-width: 600px;
 }
 .CardImgTransparent {
-  position: absolute; 
+  position: absolute;
   top: 35px;
 }
 .CardDesc {
@@ -23,7 +24,6 @@
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.03em;
-
 }
 .CardDescAuthor {
   color: #fff;
@@ -31,7 +31,6 @@
   font-weight: thin;
   font-size: 15px;
   letter-spacing: 0.03em;
-
 }
 .CardDescRankStar {
   color: #fff;
@@ -48,7 +47,7 @@
 .CardDescRank {
   display: flex;
   justify-content: space-between;
-  max-width:250px;
+  max-width: 250px;
 }
 
 .cardDescView {
@@ -56,14 +55,13 @@
   height: 7px;
 }
 .CardDescRankView {
-  color: #fff;  
+  color: #fff;
   display: flex;
   max-width: 250px;
   align-items: center;
   justify-content: space-between;
 }
-.CardDescRankViewItem{
+.CardDescRankViewItem {
   padding: 0 2px;
   letter-spacing: 0.03em;
-
 }

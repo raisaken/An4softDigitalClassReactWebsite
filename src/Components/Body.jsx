@@ -30,7 +30,7 @@ function Body() {
 
   return (
     <div className="mainBody">
-      <NavbarDigitalClass/>
+      <NavbarDigitalClass />
       <Header />
       <Courses />
       {/* --------<Workshop /> ----------------------------------------------------------*/}
@@ -44,50 +44,46 @@ function Body() {
       <Languages />
 
       {/* ------PreparationCard--------------------------------------------------------------------------------------- */}
-      <Preparation></Preparation>
+      <Preparation />
 
       {/* --------------------------------------------------------------------------- */}
-      <div className="SubscribedClass">
-        <Container>
-          <div className="MostClass">Most Subscribed Classs</div>
-          <div className="SubscribedClassCard">
-            <Mycard />
-            <Mycard />
-            <Mycard />
-            <Mycard />
-          </div>
-        </Container>
-      </div>
+      <Container className="SubscribedClass">
+        <div className="MostClass">Most Subscribed Classs</div>
+        <div className="SubscribedClassCard">
+          <Mycard />
+          <Mycard />
+          <Mycard />
+          <Mycard />
+        </div>
+      </Container>
       {/* -------------------------------------------------------------------------------------- */}
       <div className="Learnany">
-        <Container>
-          <div className="LearnanyDetails">
-            <div className="LearnanyGroupA">
-              <div className="LearnanyTitle"> Learn anytime, anywhere</div>
-              <div className="LearnanyDesc">
-                Propel your career, get a degree, or expand your knowledge at
-                any time anywhere
-              </div>
-              <button className="LearnanyButton">Find out how</button>
+        <Container className="LearnanyDetails">
+          <div className="LearnanyGroupA">
+            <div className="LearnanyTitle"> Learn anytime, anywhere</div>
+            <div className="LearnanyDesc">
+              Propel your career, get a degree, or expand your knowledge at any
+              time anywhere
             </div>
-            <div className="LearnanyGroupB">
-              {/* <div className="Rec1"> */}
-              <img src={Rectangle1047} alt="" className="Rec1ImgA" />
-              {/* </div> */}
-              {/* <div className="Rec2"> */}
-              <img src={Rectangle1049} alt="" className="Rec1ImgB" />
-              {/* </div> */}
-              {/* <div className="Rec3"> */}
-              <img src={Rectangle1048} alt="" className="Rec1ImgC" />
-              {/* </div> */}
-            </div>
+            <button className="LearnanyButton">Find out how</button>
+          </div>
+          <div className="LearnanyGroupB">
+            {/* <div className="Rec1"> */}
+            <img src={Rectangle1047} alt="" className="Rec1ImgA" />
+            {/* </div> */}
+            {/* <div className="Rec2"> */}
+            <img src={Rectangle1049} alt="" className="Rec1ImgB" />
+            {/* </div> */}
+            {/* <div className="Rec3"> */}
+            <img src={Rectangle1048} alt="" className="Rec1ImgC" />
+            {/* </div> */}
           </div>
         </Container>
       </div>
       <div className="interested">
         <Container>
           <div className="interesteddiv">
-            <div>
+            <div className="interesteddivImg">
               <img src={Vector5} className="vector1" alt="" />
               <img src={Vector5} className="vector2" alt="" />
               <img src={Vector3} className="vector3" alt="" />

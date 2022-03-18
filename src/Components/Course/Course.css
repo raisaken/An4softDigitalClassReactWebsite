@@ -237,3 +237,12 @@ background: #F6F5F6;
   font-size: 14px;
   font-weight: 500;
 }
+
+@media screen and (max-width:1050px){
+  .CourseDetailsDesc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}
+  

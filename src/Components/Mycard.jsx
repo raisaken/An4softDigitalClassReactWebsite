@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 
 function Mycard() {
   return (
-    <div>
+   
       <Card className="Mycard">
         <Card.Img className="CardImgMain" src={Rectangle964} />
         <Card.Img className="CardImgTransparent" src={Rectangle968} />
@@ -32,7 +32,7 @@ function Mycard() {
           </div>
         </div>
       </Card>
-    </div>
+   
   );
 }
 

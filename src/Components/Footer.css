@@ -66,3 +66,12 @@
 }
 .contact {
 }
+
+
+/* ------responsive------------------------------------------------------ */
+
+@media screen and (max-width:1050px){
+  .footerbodyContainerUpperA{
+    display: none;
+  }
+}

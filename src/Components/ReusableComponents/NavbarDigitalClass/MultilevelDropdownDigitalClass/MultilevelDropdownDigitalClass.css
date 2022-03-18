@@ -12,9 +12,9 @@
 .MultilevelDropdownDigitalClassContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .searchBar {
-  margin-top: 5px;
   height: 44px;
   width: 445px;
   background: #fff1f3;
@@ -38,6 +38,7 @@
 
 .navbuttons {
   display: flex;
+  align-items: center;
   margin: 0 10px 0 10px;
 }
 .MultilevelDropdownDigitalClass .navbuttonsRegisterButton {
