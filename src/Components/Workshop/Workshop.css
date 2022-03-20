@@ -94,3 +94,8 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 510px) {
+  .Workshop {
+   padding: 50px 0 0 0;
+  }
+}

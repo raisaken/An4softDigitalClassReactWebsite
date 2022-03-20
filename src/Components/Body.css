@@ -36,24 +36,24 @@
 /* --------Learnany-------------------------------------------------------------- */
 .Learnany {
   background: #e7f1fe;
-  padding: 8em 0 0 0;
+  padding: 8em 0 12em 0;
   height: auto;
 }
 .LearnanyDetails {
-  height: auto;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .LearnanyGroupA {
   display: flex;
+  flex: 0.5;
   flex-direction: column;
   justify-content: center;
+  height: auto;
 }
 .LearnanyGroupB {
   position: relative;
-  right: 0px;
   flex-wrap: wrap;
 }
 
@@ -91,47 +91,24 @@
   border: 1px solid rgb(128, 88, 88);
 }
 
-.Rec1 {
-  /* position: relative;
-  top: -40px; */
-}
-
 .Rec1ImgA {
-  position: relative;
-  /* max-width: 300px; */
-  width: 20%;
-  top: -22.5em;
-  left: 44em;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+  position: absolute;
+  top: -150px;
+  left: 0;
 }
 
-.Rec2 {
-  /* position: relative;
-  right: -58px;
-  top: -20px;*/
-}
 .Rec1ImgB {
   position: absolute;
-  left: 44.5em;
-  top: -6em;
-  /* max-width: 250px; */
-  width: 20%;
-  height: auto;
+  left: 58px;
+  top: 180px;
 }
 
-.Rec3 {
-  /* position: relative;
-  top: -400px;
-  left: 330px; */
-  /* max-width: 400px; */
-}
 .Rec1ImgC {
   position: absolute;
-  top: -220px;
-  left: 62em;
-  /* max-width: 300px; */
-  width: 20%;
-  height: auto;
+  top: 0px;
+  left: 340px;
 }
 
 /* --------interested------------------------------------------------- */
@@ -162,8 +139,6 @@
 }
 .vector3 {
   position: absolute;
-  /* top: -450px;
-  left: 120px; */
 }
 .interestedCol {
   display: flex;
@@ -201,14 +176,26 @@
   border: 1px solid rgb(128, 88, 88);
 }
 /* --------------------------------------------------------------------------------- */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1050px) {
   .LearnanyDetails {
     display: flex;
     flex-direction: column;
   }
   .LearnanyGroupB {
-    margin: 12em 0 0 0;
+    display: flex;
+    flex: 0.5;
+    padding: 0 0 12em 0;
+    margin: 12em 10em 0 0;
   }
+  /* .Rec1ImgA {
+    width: 50%;
+  }
+  .Rec1ImgB {
+    width: 50%;
+  }
+  .Rec1ImgC {
+    width: 50%;
+  } */
 }
 @media screen and (max-width: 1050px) {
   .interesteddiv {
@@ -235,30 +222,27 @@
     flex-wrap: wrap;
     position: relative;
     width: 100%;
+    padding: 0 0 50px 0;
   }
   .Rec1ImgA {
-    width: 100%;
-    position: relative;
-    top: -8em;
-    left: 0;
-    text-align: center;
+    width: 45%;
   }
   .Rec1ImgB {
-    width: 100%;
-    position: relative;
-    top: -6em;
-    left: 0;
-    text-align: center;
+    width: 45%;
+    top: 20px;
+    left: 0px;
   }
   .Rec1ImgC {
-    width: 100%;
-    position: relative;
-    top: -4em;
-    left: 0;
-    text-align: center;
+    width: 50%;
+    top: -50px;
+    left: 170px;
   }
 }
 @media screen and (max-width: 510px) {
+  .interested {
+    margin: 5em 0;
+    padding: 0 0 5em 0;
+  }
   .interesteddivImg {
     display: flex;
     flex-wrap: wrap;
@@ -266,12 +250,15 @@
     width: 100%;
   }
   .vector1 {
-    width: 70%;
+    width: 60%;
+    left: 80px;
   }
   .vector2 {
-    width: 70%;
+    width: 60%;
+    left: 0px;
   }
   .vector3 {
-    width: 70%;
+    width: 60%;
+    left: 40px;
   }
 }

@@ -67,11 +67,48 @@
 .contact {
 }
 
-
 /* ------responsive------------------------------------------------------ */
 
-@media screen and (max-width:1050px){
-  .footerbodyContainerUpperA{
-    display: none;
+@media screen and (max-width: 1050px) {
+  .footerbodyContainerUpperA {
+    /* display: none; */
+  }
+}
+@media screen and (max-width: 510px) {
+  .footerbody .footerbodyContainerUpper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .footerbodyContainerUpperB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0 0;
+  }
+  .vstack {
+    display: flex;
+    align-items: center;
+  }
+  .programs1,
+  .singleProgram {
+    display: flex;
+    align-items: center;
+  }
+  .COMPANY {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerbodyContainerUpperC {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
