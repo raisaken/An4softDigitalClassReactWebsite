@@ -125,7 +125,7 @@ function Languages() {
           onSelect={(k) => setKey(k)}
           className="mb-3"
         >
-          <Tab eventKey="home" title="Korean">
+          <Tab eventKey="home" title="Korean" className="Languagetabitem">
             <Slider {...settings}>
               <div>
                 <LanguageCard />

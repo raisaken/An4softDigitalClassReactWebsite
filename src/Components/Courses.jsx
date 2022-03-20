@@ -54,20 +54,24 @@ function SamplePrevArrow(props) {
 function SampleNextArrowB(props) {
   const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
-      <BiChevronRight
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#005b7f", borderRadius:"10px",margin:"0",padding:"0" }}
+      onClick={onClick}
+    >
+      {/* <BiChevronRight
         style={{
-          position: "relative",
-          top: "138px",
-          right: "545px",
-          fontSize: "60px",
+          // position: "relative",
+          // top: "138px",
+          // right: "545px",
+          fontSize: "40px",
           fontWeight: "300",
-          color: "#000",
+          color: "#005b7f",
           transition: "transform .2s",
           zIndex: "2 !important",
         }}
         className="BiChevronBnext"
-      />
+      /> */}
     </div>
   );
 }
@@ -75,20 +79,24 @@ function SampleNextArrowB(props) {
 function SamplePrevArrowB(props) {
   const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
-      <BiChevronLeft
+    <div
+      className={className}
+      onClick={onClick}
+      style={{ ...style, display: "block", background: "red" }}
+    >
+      {/* <BiChevronLeft
         style={{
           position: "relative",
-          top: "138px",
-          left: "520px",
-          fontSize: "60px",
+          // top: "138px",
+          // left: "520px",
+          fontSize: "40px",
           fontWeight: "300",
-          color: "#000",
+          color: "#005b7f",
           transition: "transform .2s",
           zIndex: "2 !important",
         }}
         className="BiChevronBprev"
-      />
+      /> */}
     </div>
   );
 }
@@ -171,10 +179,10 @@ function Courses() {
       <Container>
         <h1 className="CoursesTitle">More Than 500 courses in 20 categories</h1>
         <Tab.Container defaultActiveKey="first">
-          <Nav >
+          <Nav className="CoursesNav">
             <Slider {...settingsB}>
-              <Nav.Item>
-                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+              <Nav.Item  className="CoursesNavItem">
+                <Nav.Link eventKey="first" className="tab1">Tab 1</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="second">Tab 2</Nav.Link>
@@ -197,7 +205,7 @@ function Courses() {
             </Slider>
           </Nav>
 
-          <Tab.Content >
+          <Tab.Content className="CoursesTab">
             <Tab.Pane eventKey="first">
               <Slider {...settings}>
                 <div>

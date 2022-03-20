@@ -1,7 +1,7 @@
 .Courses {
   margin: 6em 0;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   font-family: var(--font-Montserrat);
 }
 .CoursesTitle {
@@ -13,42 +13,58 @@
   margin: 1em 0;
   letter-spacing: 0.02em;
 }
+.Courses .CoursesNav .slick-slide{
+  width: 200px !important;
+}
 
-.Courses .slick-list{
-  max-width: 1500px;
+.CoursesNav .tab1{
+  width: 50px;
 }
-  .Courses .nav-tabs .nav-link {
-  font-weight: 550;
-  line-height: 15px;
-  letter-spacing: 0.02em;
-  margin: 0.5em 0;
+
+.Courses .CoursesNavItem{
+  width: 50px;
 }
-.Courses .nav-tabs {
-  display: flex;
-  justify-content: space-around;
+
+.Courses .CoursesNav .slick-slider {
+  max-width: 1000px;
 }
-.Courses .slick-slide > div {
+.Courses .CoursesNav .slick-arrow {
+  
+}
+.Courses .CoursesNav .slick-prev {
+  
+}
+.Courses .CoursesNav .slick-list {
+  max-width: 1200px;
+}
+.Courses .CoursesNav .slick-track {
+  /* max-width: 100%; */
+  overflow: hidden;
+} 
+.Courses .CoursesNav .slick-slide {
+  
+}
+.Courses .CoursesNav .nav-item {
+  
+}
+.Courses .CoursesTab .slick-slide > div {
   margin: 0 10px;
 }
-.Courses .slick-list {
+.Courses .CoursesTab .slick-list {
   margin: 0 -10px;
 }
 
-.Courses .slick-dots {
+.Courses .CoursesTab .slick-dots {
   bottom: -64px;
 }
 
-.Courses .slick-prev,
+.Courses .CoursesTab .slick-prev,
 .slick-next {
   top: 63%;
 }
-.Courses .slick-dots li button:before {
+.Courses .CoursesTab .slick-dots li button:before {
   font-size: 12px;
   color: #0e6486;
-}
-.Courses .slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  /* color: black; */
 }
 .slick-next {
   z-index: 1;
@@ -59,19 +75,29 @@
 .Courses .BiChevron:hover {
   transform: scale(1.25);
 }
+.Courses .CoursesTab .nav-tabs .nav-link {
+  /* font-weight: 550;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  margin: 0.5em 0; */
+}
 
+.Courses .CoursesTab .slick-dots li.slick-active button:before {
+  /* opacity: 0.75; */
+  /* color: black; */
+}
 .Courses .nav-link {
-  color: #000;
+  /* color: #000;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   font-size: 25px;
   font-weight: 500;
   margin: 0 50px 0 0;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; */
 }
 .Courses .nav-tabs {
-  border: none;
+  /* border: none; */
 }
 
 @media screen and (max-width: 410px) {
@@ -81,14 +107,12 @@
   .Courses .slick-prev {
     display: none;
   }
-  .Courses .slick-list{
+  .Courses .slick-list {
     width: 200px;
   }
-  .Courses .BiChevronBnext{
+  .Courses .BiChevronBnext {
     position: relative;
   }
-  .Courses .BiChevronBprev{
-
+  .Courses .BiChevronBprev {
   }
-  
 }

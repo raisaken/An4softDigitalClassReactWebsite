@@ -1,0 +1,17 @@
+.CategoryContainer {
+  margin: 2em 0;
+}
+.CategoryTitle {
+  color: #005b7f;
+  padding: 1em 0;
+}
+.CategoryTitleCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2em;
+}
+/* 
+@media screen and (max-width: 1050px) {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   
+  } */
