@@ -60,11 +60,18 @@
 .Languages .BiChevron:hover {
   transform: scale(1.25);
 }
+@media screen and (max-width: 850px) {
+  .Languages .nav-link {
+    font-size: 20px;
+  }
+  .Languages {
+    margin: 3em 0;
+  }
+}
 
 @media screen and (max-width: 510px) {
-  .Languages .nav-link{
-   font-size: 16px;
-   margin:0;
+  .Languages .nav-link {
+    font-size: 16px;
+    margin: 0;
   }
-
 }

@@ -6,7 +6,7 @@ import PreparationCard from "./PreparationCard";
 function Preparation() {
   return (
     <div className="Preparation">
-      <Container className="PreparationContainer">
+      <Container className="">
         <div className="PreparationContainerDesc">
           <p className="PreparationContainerTitle">Track your preparation</p>
           <p className="PreparationContainerSee">See all</p>

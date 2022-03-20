@@ -49,3 +49,9 @@
   letter-spacing: 0.02em;
   line-height: 12px;
 }
+
+@media screen and (max-width:850px){
+  .nav-link{
+    font-size: 20px;
+  }
+}

@@ -59,7 +59,7 @@ function Footer() {
             </div>
           </div>
           <div className=" footerbodyContainerUpperC">
-            <p>CONTACT</p>
+            <p className="programs">CONTACT</p>
             <Stack gap={3}>
               <div className="singleProgram">Anamnagar Kathmandu</div>
               <div className="singleProgram">info@edigitalclass.com</div>
@@ -68,7 +68,7 @@ function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="copyright">
           <hr />
           Copyright © 2022 Digital class by Entersoft Inside Pvt.Ltd All rights
           reserved.

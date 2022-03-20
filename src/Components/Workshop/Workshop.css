@@ -94,8 +94,15 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 850px) {
+  .WorkshopContainer {
+    margin: 0 0 0 0;
+   padding: 3em 0 0 0;
+  }
+}
 @media screen and (max-width: 510px) {
   .Workshop {
+    margin:3em 0;
    padding: 50px 0 0 0;
   }
 }

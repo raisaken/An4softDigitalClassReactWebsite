@@ -51,27 +51,30 @@
   justify-content: space-around;
 }
 .programs {
-  font-family: "Montserrat";
+  font-family: var(--font-Poppins);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
 }
 .singleProgram {
-  font-family: "Montserrat";
+  font-family: var(--font-Poppins);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 15px;
 }
 .contact {
 }
-
+.copyright {
+  font-family: var(--font-Poppins);
+  font-size: 18px;
+}
 /* ------responsive------------------------------------------------------ */
 
-@media screen and (max-width: 1050px) {
-  .footerbodyContainerUpperA {
-    /* display: none; */
+@media screen and (max-width: 850px) {
+  .footerbody{
+    /* height: auto; */
   }
 }
 @media screen and (max-width: 510px) {
