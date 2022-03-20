@@ -7,9 +7,22 @@ import logo from "../../../../Pictures/office+logo 1.png";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+// const dropdownA = {
+//   position: "absolute",
+//   left: "100%",
+//   top: "-7px",
+// };
+// const dropdownB = {
+//   position: "absolute",
+//   right: "100%",
+// };
+
 function MultilevelDropdownDigitalClass() {
   return (
-    <div className="MultilevelDropdownDigitalClass">
+    <div
+      // style={window.innerWidth >= 410 ? dropdownA : dropdownB}
+      className="MultilevelDropdownDigitalClass"
+    >
       <Container className="MultilevelDropdownDigitalClassContainer">
         <div className="navbarLogo">
           <Navbar.Brand>
