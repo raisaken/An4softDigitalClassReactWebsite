@@ -41,6 +41,7 @@
 .InstructorContact {
   display: flex;
   padding: 30px 0;
+  justify-content: space-between;
 }
 .InstructorContactGroupA {
   display: flex;
@@ -59,14 +60,72 @@
 .InstructorContactGroupBItemIcon {
   margin: 0 1em;
 }
-.FeatureClass {
+
+@media screen and (max-width: 850px) {
+  .InstructorRatingsItem1 {
+    font-size: 20px;
+  }
+  .InstructorRatingsItem2 {
+    font-size: 15px;
+  }
+  .InstructorContactGroupA {
+    font-size: 20px;
+  }
+  .InstructorContactGroupBItemIcon {
+    font-size: 16px;
+  }
 }
-.FeatureClassTitle {
-  font-size: 30px;
-  font-weight: 700;
-}
-.FeatureClassCards {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: repeat(2, 2fr);
+
+@media screen and (max-width: 410px) {
+  .InstructorDetails {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
+  .InstructorDetailsDesc {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+  }
+  .InstructorContact {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0;
+  }
+  .InstructorRatings {
+  }
+  .InstructorDetailsImg {
+    width: 50%;
+    height: auto;
+  }
+  .InstructorDetailsTitle {
+    font-size: 16px;
+  }
+  .InstructorDetailsName {
+    font-size: 20px;
+  }
+  .InstructorDetails {
+    font-size: 16px;
+  }
+  .InstructorDetailsDesc1 {
+    font-size: 16px;
+  }
+  .InstructorRatingsItem1 {
+    font-size: 16px;
+  }
+  .InstructorRatingsItem2 {
+    font-size: 14px;
+  }
+  .InstructorContactGroupBItem {
+    font-size: 16px;
+  }
+  .InstructorContactGroupBItemIcon {
+    font-size: 16px;
+  }
+  .FeatureClass{
+    margin: 0;
+  }
 }

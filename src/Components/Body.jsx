@@ -84,6 +84,7 @@ function Body() {
         <Container>
           <div className="interesteddiv">
             <div className="interesteddivImg">
+              <div className="interestedRelative"></div>
               <img src={Vector5} className="vector1" alt="" />
               <img src={Vector5} className="vector2" alt="" />
               <img src={Vector3} className="vector3" alt="" />

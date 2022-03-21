@@ -10,6 +10,26 @@ import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { Settings } from "@material-ui/icons";
 import { Button } from "bootstrap";
 
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <BiChevronLeft
+        style={{
+          position: "relative",
+          top: "138px",
+          left: "520px",
+          fontSize: "40px",
+          fontWeight: "300",
+          color: "#005b7f",
+          transition: "transform .2s",
+          zIndex: "2 !important",
+        }}
+        className="BiChevron"
+      />
+    </div>
+  );
+}
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -31,20 +51,36 @@ function SampleNextArrow(props) {
   );
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrowB(props) {
   const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
+    <div
+      className={className}
+      onClick={onClick}
+      style={{
+        ...style,
+        display: "block",
+        backgroundColor: "#fff",
+        height: "25px",
+        width: "25px",
+        borderRadius: "50%",
+        paddingTop: "2px",
+        boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
+        textAlign: "center",
+        top: "20px",
+        left: "-5px ",
+      }}
+    >
       <BiChevronLeft
         style={{
           position: "relative",
-          top: "138px",
-          left: "520px",
-          fontSize: "40px",
+          top: "-24px",
+          left: "-2px",
+          zIndex: "2",
+          fontSize: "30px",
           fontWeight: "300",
-          color: "#005b7f",
+          color: "rgb(115 107 107)",
           transition: "transform .2s",
-          zIndex: "2 !important",
         }}
         className="BiChevron"
       />
@@ -56,50 +92,36 @@ function SampleNextArrowB(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#005b7f", borderRadius:"10px",margin:"0",padding:"0" }}
+      style={{
+        ...style,
+        display: "block",
+        background: "#fff",
+        right: "-30px",
+        top: "22px",
+        height: "25px",
+        width: "25px",
+        borderRadius: "50%",
+        paddingTop: "2px",
+        boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
+      }}
       onClick={onClick}
     >
-      {/* <BiChevronRight
+      <BiChevronRight
         style={{
-          // position: "relative",
-          // top: "138px",
-          // right: "545px",
-          fontSize: "40px",
+          position: "relative",
+          top: "-25px",
+          right: "3px",
+          fontSize: "30px",
           fontWeight: "300",
-          color: "#005b7f",
+          color: "rgb(115 107 107)",
           transition: "transform .2s",
-          zIndex: "2 !important",
         }}
-        className="BiChevronBnext"
-      /> */}
+        className="BiChevron"
+      />
     </div>
   );
 }
 
-function SamplePrevArrowB(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      onClick={onClick}
-      style={{ ...style, display: "block", background: "red" }}
-    >
-      {/* <BiChevronLeft
-        style={{
-          position: "relative",
-          // top: "138px",
-          // left: "520px",
-          fontSize: "40px",
-          fontWeight: "300",
-          color: "#005b7f",
-          transition: "transform .2s",
-          zIndex: "2 !important",
-        }}
-        className="BiChevronBprev"
-      /> */}
-    </div>
-  );
-}
 function Courses() {
   const [key, setKey] = useState("Programming");
   var settings = {
@@ -151,24 +173,24 @@ function Courses() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 850,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 4,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -180,27 +202,26 @@ function Courses() {
         <h1 className="CoursesTitle">More Than 500 courses in 20 categories</h1>
         <Tab.Container defaultActiveKey="first">
           <Nav className="CoursesNav">
-            <Slider {...settingsB}>
-              <Nav.Item  className="CoursesNavItem">
-                <Nav.Link eventKey="first" className="tab1">Tab 1</Nav.Link>
+            <Slider {...settingsB} className="CoursesNavSlider">
+              <Nav.Item className="CoursesNavItem">
+                <Nav.Link eventKey="first" className="tab1">
+                  Math
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                <Nav.Link eventKey="second">Science</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                <Nav.Link eventKey="third">Music</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="fourth">Tab 4</Nav.Link>
+                <Nav.Link eventKey="fourth">Programming</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="fifth">Tab 5</Nav.Link>
+                <Nav.Link eventKey="fifth">Account</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="sixth">Tab 5</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="seventh">Tab 5</Nav.Link>
+                <Nav.Link eventKey="sixth">NewClass</Nav.Link>
               </Nav.Item>
             </Slider>
           </Nav>
@@ -228,7 +249,7 @@ function Courses() {
                 </div>
               </Slider>
             </Tab.Pane>
-            <Tab.Pane eventKey="second" title="Math">
+            <Tab.Pane eventKey="second">
               <Slider {...settings}>
                 <div>
                   <Mycard />
@@ -250,7 +271,7 @@ function Courses() {
                 </div>
               </Slider>
             </Tab.Pane>
-            <Tab.Pane eventKey="third" title="Science">
+            <Tab.Pane eventKey="third">
               <Slider {...settings}>
                 <div>
                   <Mycard />
@@ -272,7 +293,7 @@ function Courses() {
                 </div>
               </Slider>
             </Tab.Pane>
-            <Tab.Pane eventKey="fourth" title="Programming">
+            <Tab.Pane eventKey="fourth">
               <Slider {...settings}>
                 <div>
                   <Mycard />
@@ -294,7 +315,7 @@ function Courses() {
                 </div>
               </Slider>
             </Tab.Pane>
-            <Tab.Pane eventKey="fifth" title="Music">
+            <Tab.Pane eventKey="fifth">
               <Slider {...settings}>
                 <div>
                   <Mycard />
@@ -316,7 +337,7 @@ function Courses() {
                 </div>
               </Slider>
             </Tab.Pane>
-            <Tab.Pane eventKey="Account" title="Account">
+            <Tab.Pane eventKey="sixth">
               <Slider {...settings}>
                 <div>
                   <Mycard />

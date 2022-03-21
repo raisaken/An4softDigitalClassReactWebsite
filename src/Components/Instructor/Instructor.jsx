@@ -12,11 +12,13 @@ function Instructor() {
   return (
     <div>
       <div className="InstructorDetails">
-        <img src={Ellipse11} alt="" />
+        <img src={Ellipse11} alt=""  className="InstructorDetailsImg"/>
         <div className="InstructorDetailsDesc">
           <div className="InstructorDetailsTitle">Instructors</div>
           <div className="InstructorDetailsName">Ranju Hamal</div>
-          <div className="InstructorDetailsDesc1">Professor of Computer programming</div>
+          <div className="InstructorDetailsDesc1">
+            Professor of Computer programming
+          </div>
         </div>
       </div>
       <div className="InstructorRatings">
@@ -53,13 +55,13 @@ function Instructor() {
       <div className="InstructorContact">
         <div className="InstructorContactGroupA">Contact info</div>
         <div className="InstructorContactGroupB">
-          <div  className="InstructorContactGroupBItem">
-    
-            <GoLocation className="InstructorContactGroupBItemIcon"/> Anamnagar, Kathmandu
+          <div className="InstructorContactGroupBItem">
+            <GoLocation className="InstructorContactGroupBItemIcon" />{" "}
+            Anamnagar, Kathmandu
           </div>
-       
-          <div>
-            <AiFillMail className="InstructorContactGroupBItemIcon"/>
+
+          <div className="InstructorContactGroupBItem">
+            <AiFillMail className="InstructorContactGroupBItemIcon" />{" "}
             info@edigitalclass.com
           </div>
         </div>

@@ -1,4 +1,5 @@
 .Levels {
+  display: flex;
   height: auto;
   margin: 1em 0;
   display: flex;
@@ -51,10 +52,21 @@
   transform: scale(1.25);
 }
 
-@media screen and (max-width: 510px) {
-  .Levels .nav-link{
-   font-size: 16px;
-   margin:0;
+@media screen and (max-width: 850px) {
+  .Levels .nav-link {
+    font-size: 20px;
   }
+  .Levels {
+    margin: 3em 0;
+  }
+}
 
+@media screen and (max-width: 510px) {
+  .Levels .nav-link {
+    font-size: 16px;
+    margin: 0;
+  }
+  .Levels .slick-arrow {
+    display: none !important;
+  }
 }

@@ -1,52 +1,40 @@
 .Courses {
   margin: 6em 0;
-  /* display: flex;
-  align-items: center; */
   font-family: var(--font-Montserrat);
 }
 .CoursesTitle {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   line-height: 37px;
   font-size: 30px;
   font-weight: 700;
   margin: 1em 0;
   letter-spacing: 0.02em;
 }
-.Courses .CoursesNav .slick-slide{
-  width: 200px !important;
+
+.Courses .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.CoursesNav .tab1{
+.nav-link.active {
+  border-bottom: 5px solid orange !important;
+  margin: 0 0 1em 0;
+}
+
+.Courses .CoursesNavItem {
   width: 50px;
 }
 
-.Courses .CoursesNavItem{
-  width: 50px;
-}
-
-.Courses .CoursesNav .slick-slider {
-  max-width: 1000px;
-}
-.Courses .CoursesNav .slick-arrow {
-  
-}
-.Courses .CoursesNav .slick-prev {
-  
-}
 .Courses .CoursesNav .slick-list {
-  max-width: 1200px;
+  max-width: 1270px;
 }
 .Courses .CoursesNav .slick-track {
-  /* max-width: 100%; */
   overflow: hidden;
-} 
-.Courses .CoursesNav .slick-slide {
-  
 }
-.Courses .CoursesNav .nav-item {
-  
-}
+
 .Courses .CoursesTab .slick-slide > div {
   margin: 0 10px;
 }
@@ -58,8 +46,10 @@
   bottom: -64px;
 }
 
-.Courses .CoursesTab .slick-prev,
-.slick-next {
+.Courses .CoursesTab .slick-next {
+  top: 63%;
+}
+.Courses .CoursesTab .slick-prev {
   top: 63%;
 }
 .Courses .CoursesTab .slick-dots li button:before {
@@ -75,44 +65,67 @@
 .Courses .BiChevron:hover {
   transform: scale(1.25);
 }
-.Courses .CoursesTab .nav-tabs .nav-link {
-  /* font-weight: 550;
-  line-height: 15px;
-  letter-spacing: 0.02em;
-  margin: 0.5em 0; */
+@media screen and (max-width: 550px) {
+  .Levels .nav-link {
+    font-size: 16px;
+    margin: 0;
+  }
+  .Courses .slick-arrow {
+    display: none !important;
+  }
 }
-
-.Courses .CoursesTab .slick-dots li.slick-active button:before {
-  /* opacity: 0.75; */
-  /* color: black; */
+@media screen and (max-width: 450px) {
+  .Courses .CoursesNav .slick-slider {
+    max-width: 340px;
+  }
 }
-.Courses .nav-link {
-  /* color: #000;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  font-size: 25px;
-  font-weight: 500;
-  margin: 0 50px 0 0;
-  letter-spacing: 0.02em; */
-}
-.Courses .nav-tabs {
-  /* border: none; */
-}
-
 @media screen and (max-width: 410px) {
+  .Courses {
+    margin: 3em 0 0 0;
+  }
   .Courses .slick-next {
     display: none;
+  }
+  .CoursesTitle {
+    margin: 0 0 1em 0;
+    padding: 0;
+    text-align: center;
   }
   .Courses .slick-prev {
     display: none;
   }
-  .Courses .slick-list {
-    width: 200px;
-  }
+
   .Courses .BiChevronBnext {
     position: relative;
   }
-  .Courses .BiChevronBprev {
+  .Courses .CoursesNav .slick-slider {
+    max-width: 320px;
+  }
+  .CoursesNavSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #005b7f;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Courses .CoursesNav .slick-slider {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .Courses .CoursesTab .slick-next {
+    top: 120%;
+    left: 400px;
+    background-color: rgb(68, 183, 228);
+    border-radius: 50%;
+  }
+  .Courses .CoursesTab .slick-prev {
+    top: 120%;
+    left: 270px;
+    background-color: rgb(68, 183, 228);
+    border-radius: 50%;
   }
 }

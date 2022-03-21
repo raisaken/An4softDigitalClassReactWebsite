@@ -9,47 +9,46 @@ function Workshop() {
   return (
     <div className="Workshop">
       {/* <div className="Workshop1"> */}
-        <Container>
-          <div className="WorkshopContainer">
+      <Container>
+        <div className="WorkshopContainer">
+          <div>
             <div>
+              {/* <img src={Vector8} alt="" className="WorkshopContainerimg" /> */}
+              <div className="WorkshopContainerRelative"></div>
+              <div className="WorkshopTitle">Workshop</div>
+            </div>
+            <div className="ADVERTISING">ADVERTISING, BRANDING & MARKETING</div>
+            <div className="Prepare">
+              Prepare for the challenges of the future
+            </div>
+            <div className="RemaningTime">
               <div>
-                <img src={Vector8} alt="" />
-                <div className="WorkshopTitle">Workshop</div>
+                <hr className="hr" />
+                <div className="RemaningTimeItem">Remaning Time</div>
+                <hr className="hr" />
               </div>
-              <div className="ADVERTISING">
-                ADVERTISING, BRANDING & MARKETING
+              <div className="Hour">
+                <div className="number">06</div>
+                <div className="numberItem">Hour</div>
               </div>
-              <div className="Prepare">
-                Prepare for the challenges of the future
+              <div className="Hour">
+                <div className="number">06</div>
+                <div className="numberItem">Hour</div>
               </div>
-              <div className="RemaningTime">
-                <div>
-                  <hr className="hr" />
-                  <div className="RemaningTimeItem">Remaning Time</div>
-                  <hr className="hr" />
-                </div>
-                <div className="Hour">
-                  <div className="number">06</div>
-                  <div className="numberItem">Hour</div>
-                </div>
-                <div className="Hour">
-                  <div className="number">06</div>
-                  <div className="numberItem">Hour</div>
-                </div>
-                <div className="Hour">
-                  <div className="number">06</div>
-                  <div className="numberItem">Hour</div>
-                </div>
+              <div className="Hour">
+                <div className="number">06</div>
+                <div className="numberItem">Hour</div>
               </div>
-              <button className="BookNow">Book Now</button>
             </div>
-            <div>
-              <img src={EnglishTeacher} className="EnglishTeacher" alt="" />
-            </div>
+            <button className="BookNow">Book Now</button>
           </div>
-        </Container>
-        {/* <img src={Rectangle994} className="Rectangle994" alt="" /> */}
-      </div>
+          <div>
+            <img src={EnglishTeacher} className="EnglishTeacher" alt="" />
+          </div>
+        </div>
+      </Container>
+      {/* <img src={Rectangle994} className="Rectangle994" alt="" /> */}
+    </div>
     // </div>
   );
 }

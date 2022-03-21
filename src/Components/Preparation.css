@@ -30,10 +30,26 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .PreparationCards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;  
 }
-.PreparationCards >*{
-  flex-grow: 1;
+
+
+@media screen and (max-width: 410px) {
+  .Preparation {
+    padding: 3em 0 0 0;
+  }
+  .PreparationContainerDesc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .PreparationContainerDesc .PreparationContainerTitle{
+    display: flex;
+    flex: 1;
+  }
+  .PreparationContainerSee{
+    display: flex;
+    align-items: center;
+  }
 }
