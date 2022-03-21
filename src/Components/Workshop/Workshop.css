@@ -10,13 +10,21 @@
   display: flex;
   align-items: center;
 }
+.WorkshopContainerRelative{
+  position: relative;
+}
+.WorkshopContainerimg{
+  position: relative;
+  z-index: 1;
+}
 .WorkshopTitle {
   font-size: 30px;
   font-weight: 800;
-  position: relative;
-  top: -55px;
-  left: 20px;
+  /* position: absolute; */
+  /* top: -55px; */
+  /* left: 20px; */
   color: #ffc000;
+  z-index: 2;
 }
 .ADVERTISING {
   font-size: 45px;

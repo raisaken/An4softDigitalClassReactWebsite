@@ -74,4 +74,11 @@
     font-size: 16px;
     margin: 0;
   }
+
+  /* .slick-next{
+    display: none;
+  } */
+  .Languages .slick-arrow {
+    display: none !important;
+  }
 }

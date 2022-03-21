@@ -65,7 +65,20 @@
 .Courses .BiChevron:hover {
   transform: scale(1.25);
 }
-
+@media screen and (max-width: 550px) {
+  .Levels .nav-link {
+    font-size: 16px;
+    margin: 0;
+  }
+  .Courses .slick-arrow {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Courses .CoursesNav .slick-slider {
+    max-width: 340px;
+  }
+}
 @media screen and (max-width: 410px) {
   .Courses {
     margin: 3em 0 0 0;
@@ -95,6 +108,11 @@
     color: #005b7f;
     font-size: 16px;
     font-weight: 400;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Courses .CoursesNav .slick-slider {
+    max-width: 250px;
   }
 }
 @media screen and (max-width: 850px) {

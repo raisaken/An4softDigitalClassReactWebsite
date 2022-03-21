@@ -1,18 +1,22 @@
 .Course {
   font-family: var(--font-Poppins);
-  overflow: hidden;
 }
 .CourseDetails {
 }
 .CourseDetailsDesc {
   display: flex;
+  gap: 4em;
+  flex: 1;
 }
+/* .CourseDetailsDesc > * {
+  display: flex;
+  flex: 1;
+} */
 .CourseDetailsLeft {
   position: relative;
   display: flex;
   flex-direction: column;
-  flex: 2;
-  margin: 0 15em 0 0;
+  flex: 2 1;
 }
 .CourseDetailsLeftBreadcrumb {
   margin: 3em 0 0 0;
@@ -57,12 +61,16 @@
   position: sticky;
   top: 80px;
   border-radius: 1em;
-  
+
   /* background-color: red; */
 }
-.Course .CardVideoModelPreview {
+.Rerightctangle1061 {
+  position: relative;
+}
+
+.CardVideoModelPreview {
   position: absolute;
-  top: 14%;
+  top: 12%;
   left: 42%;
 }
 .CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemA {
@@ -149,8 +157,9 @@
 }
 
 .CourseDetailsStudentsCards {
-  display: grid;
-  grid-gap: 1em;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
 }
 /* -----------FeatureClass---------------------------------------- */
 .FeatureClass {
@@ -161,6 +170,12 @@
   font-weight: 700;
   margin: 1em 0;
 }
+.FeatureClassCards {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 /* -------CourseDetailsRight---------------------------------------- */
 .CourseDetailsRightCC {
   border: none;
@@ -211,10 +226,7 @@
   border-radius: 5px;
   background-color: #ffc000;
 }
-/* .BuyNow:hover {
-  box-shadow: 10px 20px 40px red;
-  background-color: #000;
-} */
+
 .AddtoCart {
   margin: 20px 0 0 0;
   border: 1px solid #0e6486;
@@ -239,14 +251,45 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 850px) {
+  .CourseDetailsStudents {
+    margin: 0;
+  }
+  .CourseDetailsRightoffoff {
+    display: flex;
+    align-items: center;
+    padding: 0 0.3em;
+  }
+  .CourseDetailsRight {
+    width: 200px;
+  }
+  .CardVideoModelPreview {
+    position: absolute;
+    top: 7%;
+    left: 42%;
+  }
+  .CourseDetailsRightPrice {
+    font-size: 14px;
+  }
+  .CourseDetailsRightoffprice {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .CourseDetailsRightoffoff {
+    font-size: 12px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 410px) {
   .CourseDetailsDesc {
-    position: relative;
     display: flex;
     flex-direction: column;
   }
- 
   .CourseDetailsRight {
     display: none;
+  }
+  .FeatureClassTitle {
+    font-size: 25px;
   }
 }

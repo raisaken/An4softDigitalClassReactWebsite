@@ -1,7 +1,8 @@
 .StudentsBoughtCard {
-  display: flex;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
   /* z-index: 2000 !important; */
-
 }
 .StudentsBoughtCardbackground {
   background-color: #562121;
@@ -10,36 +11,126 @@
   border-radius: 3px;
 }
 .StudentsBoughtCardDesc {
-  margin-left: 20px;
-  flex: 1.5;
+  display: flex;
+  justify-content: space-between;
+}
+.StudentsBoughtCardfinal {
+  display: flex;
+  justify-content: space-between;
+  gap: 15em;
+}
+
+.StudentsBoughtCardDescPrice {
+  display: flex;
+  gap: 2em;
+}
+.StudentsBoughtCardDescDetails {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.StudentsBoughtCardDescTitle{
-    font-size: 25px;
-    font-weight: 600;
+.StudentsBoughtCardDescTitle {
+  font-size: 25px;
+  font-weight: 600;
 }
-.StudentsBoughtCardDescname{
-    font-size: 28px;
-    font-weight: 500;
+.StudentsBoughtCardDescname {
+  font-size: 28px;
+  font-weight: 500;
 }
-.StudentsBoughtCardDescRank{
+.StudentsBoughtCardDescRank {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.StudentsBoughtCardDescSeller {
+  background-color: #ffc000;
+  padding: 2px 5px;
+  width: 8em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.StudentsBoughtCardPrice {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media screen and (max-width: 850px) {
+  .StudentsBoughtCardDescTitle {
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 0.1em;
+  }
+  .StudentsBoughtCardDescname {
+    font-size: 20px;
+  }
+  .StudentsBoughtCardfinal {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }
-.StudentsBoughtCardDescSeller{
-background-color: #FFC000;
-padding: 2px 5px;
-width: 30%;
-border-radius: 5px;
-display: flex;
-justify-content: center;
-}
-.StudentsBoughtCardPrice{
+@media screen and (max-width: 450px) {
+  .CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemA {
+    font-size: 25px;
+  }
+
+  .CourseDetailsLeftBreadcrumb .CourseDetailsLeftBreadcrumbItemB {
+    font-size: 25px;
+  }
+  .CourseDetailsLeftstarrateGroupA {
+    font-size: 16px;
+  }
+  .CourseDetailsLeftstarrateGroupB {
+    font-size: 16px;
+  }
+  .CourseDetailsLeftImgDescTitle {
+    font-size: 18px;
+  }
+  .CourseDetailsLeftImgDescDetails {
+    font-size: 16px;
+  }
+  .Preview {
+    font-size: 25px;
+  }
+  .PreviewItems {
+    display: flex;
+    flex-direction: column;
+  }
+  .PreviewItemsDetails {
+    font-size: 16px;
+  }
+  .Description{
+    font-size: 25px;
+  }
+  .DescriptionDetails{
+    font-size: 16px;
+  }
+  .Showmore{
+    margin: -0.2em 0 1em 0;
+    font-size: 16px;
+  }
+  .CourseDetailsStudentsTitle {
+    font-size: 25px;
+  }
+  .StudentsBoughtCardDescname {
+    font-size: 16px;
+  }
+  .StudentsBoughtCardDescRank {
+    font-size: 12px;
+  }
+  .StudentsBoughtCardPrice {
+    font-size: 14px;
+  }
+  .StudentsBoughtCardbackground {
+    margin: 0.8em 0 0 0;
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-weight: 700;
+    justify-content: center;
+    height: 6em;
+    width: 6em;
+  }
+  .StudentsBoughtCardDescSeller {
+    font-size: 14px;
+  }
 }

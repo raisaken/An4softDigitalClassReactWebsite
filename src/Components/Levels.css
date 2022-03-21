@@ -66,4 +66,7 @@
     font-size: 16px;
     margin: 0;
   }
+  .Levels .slick-arrow {
+    display: none !important;
+  }
 }

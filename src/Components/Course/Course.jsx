@@ -95,36 +95,44 @@ function Course() {
                   <FaStar className="FaStar" />
                   <FaStar className="FaStar" />
                 </div>
-                <div>
+                <div className="CourseDetailsLeftstarrateGroupB">
                   <AiFillEye />
                   1000 view
                 </div>
               </div>
               <div className="CourseDetailsLeftImgDesc">
                 <div>
-                  <img src={Ellipse6} alt="" className="CourseDetailsLeftImgDescOnlyImg"/>
+                  <img
+                    src={Ellipse6}
+                    alt=""
+                    className="CourseDetailsLeftImgDescOnlyImg"
+                  />
                 </div>
                 <div>
-                  <div  className="CourseDetailsLeftImgDescTitle">By Raju Hamal</div>
-                  <div  className="CourseDetailsLeftImgDescDetails">More than 6 year of experience</div>
+                  <div className="CourseDetailsLeftImgDescTitle">
+                    By Raju Hamal
+                  </div>
+                  <div className="CourseDetailsLeftImgDescDetails">
+                    More than 6 year of experience
+                  </div>
                 </div>
               </div>
               <div className="CourseDetailsLeftIoMdContact">
-                <IoMdContact className="CourseDetailsLeftIoMdContactGA"/>
+                <IoMdContact className="CourseDetailsLeftIoMdContactGA" />
                 1546 already enrolled
               </div>
               <div className="Preview">Preview this Course</div>
               <div className="PreviewItems">
-                <div>
+                <div className="PreviewItemsDetails">
                   ✓ 5 Introduction Of Plastic Its Use And Characteristics
                 </div>
-                <div>
+                <div className="PreviewItemsDetails">
                   ✓ 5 Introduction Of Plastic Its Use And Characteristics
                 </div>
-                <div>
+                <div className="PreviewItemsDetails">
                   ✓ 5 Introduction Of Plastic Its Use And Characteristics
                 </div>
-                <div>
+                <div className="PreviewItemsDetails">
                   ✓ 5 Introduction Of Plastic Its Use And Characteristics
                 </div>
               </div>
@@ -185,7 +193,6 @@ function Course() {
                   <Mycard />
                   <Mycard />
                   <Mycard />
-                  <Mycard />
                 </div>
               </div>
             </div>
@@ -197,10 +204,14 @@ function Course() {
                 // } CourseDetailsRightCC`}
               >
                 <div>
-                  <CardImg src={Rectangle1061}></CardImg>
+                  <CardImg
+                    src={Rectangle1061}
+                    className="Rerightctangle1061"
+                  ></CardImg>
                 </div>
                 <div className="CardVideoModelPreview">
-                  <VideoModelPreview />
+                  <div className="CardVideoModelPreviewRelative"></div>
+                  <VideoModelPreview className="CardVideoModelPreviewRelativemodal" />
                 </div>
                 <div className="CourseDetailsRightC">
                   <Container className="CourseDetailsRightContainer">

@@ -9,7 +9,7 @@ import "./Languages.css";
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 import LevelsCard from "./LevelsCard";
-import './Levels.css'
+import "./Levels.css";
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
@@ -60,8 +60,9 @@ function SampleNextArrow(props) {
         textAlign: "center",
         paddingTop: "6px",
         boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
-        top:"50%"
+        top: "50%",
 
+        left: "-5px",
       }}
       onClick={onClick}
     >
@@ -79,8 +80,6 @@ function SampleNextArrow(props) {
     </div>
   );
 }
-
-
 
 function Languages() {
   const [key, setKey] = useState("home");
