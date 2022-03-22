@@ -148,8 +148,6 @@
 .interestedCol {
   display: flex;
   position: relative;
-  /* left: 60%;
-  width: 40%; */
   flex-direction: column;
   justify-content: center;
   padding: 2em 0 0 0;

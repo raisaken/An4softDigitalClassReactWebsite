@@ -65,6 +65,32 @@
 .Courses .BiChevron:hover {
   transform: scale(1.25);
 }
+@media screen and (max-width: 850px) {
+  .Courses .CoursesNav .slick-slider {
+    max-width: 670px;
+  }
+  .CardDescTitle{
+    z-index: 1;
+  }
+  .Courses .CoursesTab .slick-next {
+    display: none;
+    /* top: 120%;
+    left: 400px;
+    background-color: rgb(68, 183, 228);
+    border-radius: 50%; */
+  }
+  .Levels .slick-next, .slick-prev{
+    display: none !important;
+  
+  }
+  .Courses .CoursesTab .slick-prev {
+    display: none;
+    /* top: 20%;
+    left: 270px;
+    background-color: rgb(68, 183, 228);
+    border-radius: 50%; */
+  }
+}
 @media screen and (max-width: 550px) {
   .Levels .nav-link {
     font-size: 16px;
@@ -113,19 +139,5 @@
 @media screen and (max-width: 375px) {
   .Courses .CoursesNav .slick-slider {
     max-width: 250px;
-  }
-}
-@media screen and (max-width: 850px) {
-  .Courses .CoursesTab .slick-next {
-    top: 120%;
-    left: 400px;
-    background-color: rgb(68, 183, 228);
-    border-radius: 50%;
-  }
-  .Courses .CoursesTab .slick-prev {
-    top: 120%;
-    left: 270px;
-    background-color: rgb(68, 183, 228);
-    border-radius: 50%;
   }
 }
