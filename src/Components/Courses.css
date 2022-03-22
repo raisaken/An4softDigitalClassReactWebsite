@@ -69,8 +69,11 @@
   .Courses .CoursesNav .slick-slider {
     max-width: 670px;
   }
-  .CardDescTitle{
+  .CardDescTitle {
     z-index: 1;
+  }
+  .CoursesTab svg {
+    display: none;
   }
   .Courses .CoursesTab .slick-next {
     display: none;
@@ -79,12 +82,12 @@
     background-color: rgb(68, 183, 228);
     border-radius: 50%; */
   }
-  .Levels .slick-next, .slick-prev{
-    display: none !important;
-  
+  .Levels .slick-next,
+  .slick-prev {
+    /* display: none !important; */
   }
   .Courses .CoursesTab .slick-prev {
-    display: none;
+    /* display: none ; */
     /* top: 20%;
     left: 270px;
     background-color: rgb(68, 183, 228);
@@ -97,7 +100,7 @@
     margin: 0;
   }
   .Courses .slick-arrow {
-    display: none !important;
+    /* display: none !important; */
   }
 }
 @media screen and (max-width: 450px) {
@@ -107,18 +110,22 @@
 }
 @media screen and (max-width: 410px) {
   .Courses {
-    margin: 3em 0 0 0;
-  }
-  .Courses .slick-next {
-    display: none;
+    margin: 3em 0 8em 0;
   }
   .CoursesTitle {
     margin: 0 0 1em 0;
     padding: 0;
     text-align: center;
   }
-  .Courses .slick-prev {
+  .CoursesTab svg {
     display: none;
+  }
+  .Courses .slick-next {
+    display: block;
+    /* display: none; */
+  }
+  .Courses .slick-prev {
+    /* display: none; */
   }
 
   .Courses .BiChevronBnext {

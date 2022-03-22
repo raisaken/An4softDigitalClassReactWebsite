@@ -24,8 +24,9 @@ function SampleNextArrow(props) {
         textAlign: "center",
         paddingTop: "6px",
         boxShadow: "0 2px 5px 0 rgb(0 0 0 / 15%)",
-
-      //  display:"none"
+        // top: "50%",
+        // left: "-5px",
+        //  display:"none"
       }}
       onClick={onClick}
     >
