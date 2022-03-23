@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Body />} />
+        <Route path="/An4softDigitalClassReactWebsite" element={<Body />} />
         <Route path="/course" element={<Course />} />
         <Route path="/stiky" element={<StikyTest />} />
         <Route path="/preview" element={<VideoModelPreview />} />
