@@ -5,7 +5,7 @@ import Rectangle1049 from "../../../Assets/Images/Rectangle 1049.png";
 import Rectangle1048 from "../../../Assets/Images/Rectangle 1048.png";
 import Rectangle1047 from "../../../Assets/Images/Rectangle 1047.png";
 import { CourseData } from "./Data";
-import CourseCard from "../CourseCard/CourseCard";
+import CourseCard from "../Courses/CourseCard/CourseCard";
 import { Container } from "react-bootstrap";
 
 function Subscribed() {

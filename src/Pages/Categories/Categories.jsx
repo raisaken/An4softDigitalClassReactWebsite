@@ -3,11 +3,11 @@ import { Container } from "react-bootstrap";
 
 import DigitalClassNavBar from "../../Layouts/Header/DigitalClassNavBar/DigitalClassNavBar";
 import Footer from "../../Layouts/Footer/Footer";
-import CourseCard from "../../components/Home/CourseCard/CourseCard";
+import CourseCard from "../../components/Home/Courses/CourseCard/CourseCard";
 
 import "./Categories.css";
 
-import { Data } from "../../Layouts/Courses/Data";
+import { Data } from "../../components/Home/Courses/Data";
 
 function Categories() {
   return (

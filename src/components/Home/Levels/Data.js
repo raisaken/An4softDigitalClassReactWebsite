@@ -1,5 +1,5 @@
-import Rectangle997 from "../../Assets/Images/Rectangle 997.png";
-import Rectangle1006 from "../../Assets/Images/Rectangle 1006.png";
+import Rectangle1006 from "../../../Assets/Images/Rectangle 1006.png";
+import Rectangle997 from "../../../Assets/Images/Rectangle 997.png";
 
 export const Primary = [
   {

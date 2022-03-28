@@ -22,7 +22,7 @@ import Ellipse6 from "../../Assets/Images/Ellipse 6.png";
 
 import VideoModelPreview from "../../components/Course/VideoModelPreview/VideoModelPreview";
 import Instructor from "../../components/Course/Instructor/Instructor";
-import CourseCard from "../../components/Home/CourseCard/CourseCard";
+import CourseCard from "../../components/Home/Courses/CourseCard/CourseCard";
 import StudentsBoughtCard from "../../components/Home/StudentsBoughtCard/StudentsBoughtCard";
 import DigitalClassNavBar from "../../Layouts/Header/DigitalClassNavBar/DigitalClassNavBar";
 

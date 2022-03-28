@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Courses.css";
 
-import Mycard from "../../components/Home/CourseCard/CourseCard";
+import Mycard from "./CourseCard/CourseCard";
 
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 

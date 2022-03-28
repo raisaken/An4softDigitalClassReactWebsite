@@ -1,5 +1,5 @@
-import Rectangle1017 from "../../Assets/Images/Rectangle 1017.png";
-import Ellipse6 from "../../Assets/Images/Ellipse 6.png";
+import Rectangle1017 from "../../../Assets/Images/Rectangle 1017.png";
+import Ellipse6 from "../../../Assets/Images/Ellipse 6.png";
 
 export const Korean = [
   {
