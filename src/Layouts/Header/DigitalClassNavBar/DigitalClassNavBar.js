@@ -5,12 +5,12 @@ import "./DigitalClassNavBar.css";
 import { menuItems } from "./menuItems";
 import SubMenuItems from "./SubMenuItems";
 
-import logo from "../../Assets/Images/office+logo 1.png";
+import logo from "../../../Assets/Images/office+logo 1.png";
 
 import { Container, Navbar } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { CustomNameInput } from "../../components/Common/Fields/CustomInput/CustomInput";
+import { CustomNameInput } from "../../../components/Common/Fields/CustomInput/CustomInput";
 
 function DigitalClassNavBar() {
   return (

@@ -24,7 +24,7 @@ import VideoModelPreview from "../../Layouts/VideoModelPreview/VideoModelPreview
 import Instructor from "../../Layouts/Instructor/Instructor";
 import CourseCard from "../../Layouts/Courses/CourseCard/CourseCard";
 import StudentsBoughtCard from "../../Layouts/StudentsBoughtCard/StudentsBoughtCard";
-import DigitalClassNavBar from "../../Layouts/DigitalClassNavBar/DigitalClassNavBar";
+import DigitalClassNavBar from "../../Layouts/Header/DigitalClassNavBar/DigitalClassNavBar";
 
 function Course() {
   const [key, setKey] = useState("home");

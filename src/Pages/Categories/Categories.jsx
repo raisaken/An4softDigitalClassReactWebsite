@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import DigitalClassNavBar from "../../Layouts/DigitalClassNavBar/DigitalClassNavBar";
+import DigitalClassNavBar from "../../Layouts/Header/DigitalClassNavBar/DigitalClassNavBar";
 import Footer from "../../Layouts/Footer/Footer";
 import CourseCard from "../../Layouts/Courses/CourseCard/CourseCard";
 

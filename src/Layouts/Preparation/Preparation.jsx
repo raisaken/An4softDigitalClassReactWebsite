@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./Preparation.css";
-import PreparationCard from "../Preparationcard/PreparationCard";
+import PreparationCard from "./Preparationcard/PreparationCard";
 
 function Preparation() {
   return (
