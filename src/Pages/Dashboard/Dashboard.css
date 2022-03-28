@@ -3,7 +3,7 @@
   /* overflow: hidden; */
 }
 
-/* ------------------------------------------------------ */
+/* ------------SubscribedClass----------------------------------------------------------- */
 
 .SubscribedClass {
   padding: 5em 0;
@@ -23,14 +23,11 @@
   color: #000000;
 }
 .SubscribedClassCard {
-  display: flex;
+  display: grid;
   gap: 1em;
-  flex: 1;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.SubscribedClassCard > * {
-  flex-grow: 1;
-}
+
 /* --------Learnany-------------------------------------------------------------- */
 .Learnany {
   background: #e7f1fe;
