@@ -9,7 +9,7 @@ import "./Languages.css";
 
 import { Chinese, French, Japanese, Korean, Nepali } from "./Data";
 
-import LanguageCard from "./Languagecard/LanguageCard";
+import LanguageCard from "../../components/Home/Languagecard/LanguageCard";
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 

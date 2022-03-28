@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 import DigitalClassNavBar from "../../Layouts/Header/DigitalClassNavBar/DigitalClassNavBar";
 import Footer from "../../Layouts/Footer/Footer";
-import CourseCard from "../../Layouts/Courses/CourseCard/CourseCard";
+import CourseCard from "../../components/Home/CourseCard/CourseCard";
 
 import "./Categories.css";
 

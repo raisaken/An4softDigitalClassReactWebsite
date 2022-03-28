@@ -20,10 +20,10 @@ import Footer from "../../Layouts/Footer/Footer";
 import Rectangle1061 from "../../Assets/Images/Rectangle 1061.png";
 import Ellipse6 from "../../Assets/Images/Ellipse 6.png";
 
-import VideoModelPreview from "../../Layouts/VideoModelPreview/VideoModelPreview";
-import Instructor from "../../Layouts/Instructor/Instructor";
-import CourseCard from "../../Layouts/Courses/CourseCard/CourseCard";
-import StudentsBoughtCard from "../../Layouts/StudentsBoughtCard/StudentsBoughtCard";
+import VideoModelPreview from "../../components/Course/VideoModelPreview/VideoModelPreview";
+import Instructor from "../../components/Course/Instructor/Instructor";
+import CourseCard from "../../components/Home/CourseCard/CourseCard";
+import StudentsBoughtCard from "../../components/Home/StudentsBoughtCard/StudentsBoughtCard";
 import DigitalClassNavBar from "../../Layouts/Header/DigitalClassNavBar/DigitalClassNavBar";
 
 function Course() {

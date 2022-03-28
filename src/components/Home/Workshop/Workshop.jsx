@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import EnglishTeacher from "../../Assets/Images/Englishteacher.png";
+import EnglishTeacher from "../../../Assets/Images/Englishteacher.png";
 import "./Workshop.css";
 
 function Workshop() {

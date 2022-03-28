@@ -1,6 +1,6 @@
 import React from "react";
 
-import Ellipse11 from "../../Assets/Images/Ellipse 11.png";
+import Ellipse11 from "../../../Assets/Images/Ellipse 11.png";
 
 import { FaStar } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";

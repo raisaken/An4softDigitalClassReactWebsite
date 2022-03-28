@@ -13,7 +13,7 @@ import "../Languages/Languages.css";
 
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
-import LevelsCard from "./Levelscard/LevelsCard";
+import LevelsCard from "../../components/Home/Levelscard/LevelsCard";
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
