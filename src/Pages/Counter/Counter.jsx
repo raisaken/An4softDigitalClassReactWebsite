@@ -1,23 +1,22 @@
 import { connect } from "react-redux";
 
-import { addAction, subAction } from "../../Redux/Actions/SimpleAction";
+import { increment, decrement } from "../../Redux/Actions/CounterAction";
 
 import React from "react";
 
 const mapstatetoprops = (state) => {
-    console.log('state:', state);
-    return{
-        initialCount:state.counter.initialCount
-    }
+  console.log("state:", state);
+  return {
+    initialCount: state.counter.initialCount,
+  };
+};
 
-}
-
-const mapdispatchtoprops = (dispatch) =>{
-    return{
-        addAction:()=>dispatch(addAction()),
-        subAction:()=>dispatch(subAction())
-    }
-}
+const mapdispatchtoprops = (dispatch) => {
+  return {
+    increment: () => dispatch(increment()),
+    decrement: () => dispatch(decrement()),
+  };
+};
 
 function Counter(props) {
   return (
@@ -25,14 +24,14 @@ function Counter(props) {
       <p>Count:{props.initialCount}</p>
       <button
         onClick={() => {
-          props.addAction();
+          props.increment();
         }}
       >
         +
       </button>
       <button
         onClick={() => {
-          props.subAction();
+          props.decrement();
         }}
       >
         -
